@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  /* 1. Name the font class "font-times" and link it to your JS variable */
+  --font-times: var(--font-times); 
+  --font-kaiti: var(--font-kaiti);
+
+  --color-primary: #0070f3;
+}
+
+/* Optional: Global resets */
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+  }
+}
