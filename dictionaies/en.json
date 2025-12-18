@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "index": "Index",
+    "profile": "Profile",
+    "works": "Works",
+    "writings": "writings",
+    "contact": "Contact"
+  }
+}

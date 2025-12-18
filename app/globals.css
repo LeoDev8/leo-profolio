@@ -10,7 +10,15 @@
 
 /* Optional: Global resets */
 @layer base {
+  .font-lang-en {
+    font-family: var(--font-times);
+  }
+
+  .font-lang-zh {
+    font-family: var(--font-kaiti);
+  }
+
   body {
-    @apply bg-white text-black antialiased;
+    @apply bg-black text-white antialiased;
   }
 }
