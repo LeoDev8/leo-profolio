@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Moon, Sun } from "lucide-react";
+import { Search, Moon, Sun, Menu, X, User } from "lucide-react";
 
 interface NavbarProps {
   lang: string;
@@ -73,9 +73,24 @@ export default function Navbar({ lang, dics }: NavbarProps) {
 
         {/* 3. Right: Dark Mode */}
         <div className="hidden md:flex items-center gap-4 text-sm text-gray-400">
-          <Search></Search>
-          <Moon></Moon>
-          <Sun></Sun>
+          <button>
+            <Search></Search>
+          </button>
+
+          <button>
+            <Sun></Sun>
+          </button>
+          <button>
+            <Menu></Menu>
+          </button>
+          <button>
+            <X></X>
+          </button>
+
+          <button>
+            <User></User>
+          </button>
+
           <Link
             href={`/en`}
             className={
