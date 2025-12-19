@@ -18,7 +18,7 @@ export default async function Layout({
 
   return (
     <div
-      className={`${timesSans.variable} ${kaitiSans.variable}  ${fontClass} min-h-screen flex flex-col`}
+      className={`${timesSans.variable} ${kaitiSans.variable} ${fontClass} min-h-screen flex flex-col`}
     >
       <Navbar lang={lang} dics={dics.nav} />
       <Main>{children}</Main>

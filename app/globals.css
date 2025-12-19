@@ -5,7 +5,6 @@
   --font-times: var(--font-times); 
   --font-kaiti: var(--font-kaiti);
 
-  /* 定义新的工具类: bg-background, text-foreground */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-border: var(--border);
@@ -23,23 +22,15 @@
     font-family: var(--font-kaiti);
   }
 
-    /* 
-     默认情况 (:root) 或者显式指定 .light-mode 时
-     使用 Times New Roman 风格的米白色或纯白
-  */
   :root, .light {
     --background: #ffffff; 
-    --foreground: #0a0a0a; /* 接近纯黑，但在屏幕上比 #000 更柔和 */
-    --border: #e5e5e5;     /* 浅灰边框 */
+    --foreground: #0a0a0a;
+    --border: #e5e5e5;
   }
 
-  /* 
-     当父元素有 .dark-mode 类时
-     使用极客风的深灰 (不要用纯黑 #000000，伤眼且没质感)
-  */
   .dark {
-    --background: #09090b; /* 极深灰，类似 Vercel/shadcn 风格 */
-    --foreground: #ededed; /* 柔和白 */
-    --border: #27272a;     /* 深灰边框 */
+    --background: #09090b;
+    --foreground: #ededed; 
+    --border: #27272a; 
   }
 }
