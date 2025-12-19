@@ -1,6 +1,8 @@
 import "@/app/globals.css";
 import { timesSans, kaitiSans } from "@/libs/fonts";
 import Navbar from "@/components/layout/navbar";
+import Main from "@/components/layout/main";
+import Footer from "@/components/layout/footer";
 import { getDictionary } from "@/libs/dictionaries";
 
 export default async function Layout({
@@ -13,19 +15,14 @@ export default async function Layout({
   const { lang } = await params;
   const fontClass = lang === "zh" ? "font-lang-zh" : "font-lang-en";
   const dics = await getDictionary(lang);
+
   return (
     <div
-      className={`${timesSans.variable} ${kaitiSans.variable}  ${fontClass} min-h-screen flex flex-col bg-white text-black`}
+      className={`${timesSans.variable} ${kaitiSans.variable}  ${fontClass} min-h-screen flex flex-col`}
     >
-      <header>
-        <Navbar lang={lang} dics={dics.nav} />
-      </header>
-
-      <main className="min-h-210">{children}</main>
-
-      <footer className="w-full py-6 text-center text-gray-500 text-sm">
-        ©Copyright 2025 Leo Profolio
-      </footer>
+      <Navbar lang={lang} dics={dics.nav} />
+      <Main>{children}</Main>
+      <Footer></Footer>
     </div>
   );
 }

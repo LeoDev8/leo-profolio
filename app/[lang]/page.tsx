@@ -1,17 +1,17 @@
 export default function Home() {
   return (
-    <main>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-      <div className="text">'homepage1'</div>
-    </main>
+    <div className="w-full">
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+      <div className="">'homepage1'</div>
+    </div>
   );
 }
