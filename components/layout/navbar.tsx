@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 // Import some components ui
 import Logo from "../ui/logo";
 import Menubutton from "../ui/menu-button";
+import RouteDisplay from "../ui/route-display";
 
 interface NavbarProps {
   lang: string;
@@ -30,12 +31,11 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     { name: dics.contact, href: "/contact" },
   ];
   const { theme, setTheme } = useTheme();
-  console.log(theme);
 
   return (
     <header>
       <nav className="fixed top-0 left-0 right-0 z-50 w-ful bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-12 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           {/* <div>
             <button className="">
               <User className=""></User>
@@ -66,10 +66,11 @@ export default function Navbar({ lang, dics }: NavbarProps) {
           {/* 1. Mobile Design */}
           <div className="flex justify-between items-center md:hidden lg:hidden">
             {/* Menu Button */}
-            <Menubutton></Menubutton>
+            <Menubutton />
             {/* Logo */}
-            <Logo lang={lang}></Logo>
-            {/* Route Name */}
+            <Logo lang={lang} />
+            {/* Route Display */}
+            <RouteDisplay />
             {/* Search Button */}
             {/* Avatar */}
           </div>
@@ -123,6 +124,9 @@ export default function Navbar({ lang, dics }: NavbarProps) {
 
           {/* 3. Large Screen Design*/}
           <div className="hidden md:hidden lg:flex items-center gap-4 text-sm text-gray-400">
+            {/* Logo */}
+            <Logo lang={lang}></Logo>
+
             {/* Navigation Tags */}
             <ul className="hidden md:flex items-center gap-10">
               {links.map((link) => {
