@@ -2,8 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Moon, Sun, Menu, X, User } from "lucide-react";
+import { Search } from "lucide-react";
 import { useTheme } from "next-themes";
+
+// Import some components ui
+import Logo from "../ui/logo";
+import Menubutton from "../ui/menu-button";
 
 interface NavbarProps {
   lang: string;
@@ -32,67 +36,9 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     <header>
       <nav className="fixed top-0 left-0 right-0 z-50 w-ful bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-12 h-20 flex items-center justify-between">
-          {/* 1. Logo: Only some texts*/}
-          <div className="shrink-0">
-            <Link
-              href={`/${lang}`}
-              className="text-2xl font-bold tracking-tight hover:opacity-70 transition-opacity"
-            >
-              Leo <span>.</span>
-            </Link>
-          </div>
-
-          {/* 2. Navigation: hidden in the mobile */}
-          <ul className="hidden md:flex items-center gap-10">
-            {links.map((link) => {
-              const hrefWithLang = `/${lang}${
-                link.href === "/" ? "" : link.href
-              }`;
-
-              const isActive =
-                link.href === "/"
-                  ? pathname === `/${lang}`
-                  : pathname.startsWith(hrefWithLang);
-
-              return (
-                <Link
-                  key={link.href}
-                  href={hrefWithLang}
-                  className={`relative block text-lg transition-all duration-300 ease-in-out  hover:text-foreground/800 ${
-                    isActive ? "text-foreground font-medium" : "text-foreground/60"
-                  }`}
-                >
-                  <span className="capitalize">{link.name}</span>
-
-                  <span
-                    className={`absolute -bottom-1 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
-                      isActive ? "scale-x-100" : "scale-x-0"
-                    }
-                `}
-                  />
-                </Link>
-              );
-            })}
-          </ul>
-
-          {/* 3. Right: Dark Mode */}
-          <div className="hidden md:flex items-center gap-4 text-sm text-gray-400">
-            <button>
-              <Search></Search>
-            </button>
-
-            <button>
-              <Sun></Sun>
-            </button>
-            <button>
-              <Menu></Menu>
-            </button>
-            <button>
-              <X></X>
-            </button>
-
-            <button>
-              <User></User>
+          {/* <div>
+            <button className="">
+              <User className=""></User>
             </button>
 
             <Link
@@ -116,6 +62,113 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             >
               简体中文
             </Link>
+          </div> */}
+          {/* 1. Mobile Design */}
+          <div className="flex justify-between items-center md:hidden lg:hidden">
+            {/* Menu Button */}
+            <Menubutton></Menubutton>
+            {/* Logo */}
+            <Logo lang={lang}></Logo>
+            {/* Route Name */}
+            {/* Search Button */}
+            {/* Avatar */}
+          </div>
+
+          {/* 2. Middle Screen Design*/}
+          <div className="hidden lg:hidden md:flex items-center gap-4 text-sm text-gray-400">
+            {/* Navigation Tags */}
+            <ul className="hidden md:flex items-center gap-10">
+              {links.map((link) => {
+                const hrefWithLang = `/${lang}${
+                  link.href === "/" ? "" : link.href
+                }`;
+
+                const isActive =
+                  link.href === "/"
+                    ? pathname === `/${lang}`
+                    : pathname.startsWith(hrefWithLang);
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={hrefWithLang}
+                    className={`relative block text-lg transition-all duration-300 ease-in-out  hover:text-foreground/800 ${
+                      isActive
+                        ? "text-foreground font-medium"
+                        : "text-foreground/60"
+                    }`}
+                  >
+                    <span className="capitalize">{link.name}</span>
+
+                    <span
+                      className={`absolute -bottom-1 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
+                        isActive ? "scale-x-100" : "scale-x-0"
+                      }
+                `}
+                    />
+                  </Link>
+                );
+              })}
+            </ul>
+            {/* Search Button */}
+            <div className="hidden md:flex justify-start items-center px-2 flex-start min-w-2xs h-8 border border-border rounded-lg">
+              <label htmlFor="">
+                <Search></Search>
+              </label>
+              <button>
+                Type <kbd>/</kbd> to search
+              </button>
+            </div>
+          </div>
+
+          {/* 3. Large Screen Design*/}
+          <div className="hidden md:hidden lg:flex items-center gap-4 text-sm text-gray-400">
+            {/* Navigation Tags */}
+            <ul className="hidden md:flex items-center gap-10">
+              {links.map((link) => {
+                const hrefWithLang = `/${lang}${
+                  link.href === "/" ? "" : link.href
+                }`;
+
+                const isActive =
+                  link.href === "/"
+                    ? pathname === `/${lang}`
+                    : pathname.startsWith(hrefWithLang);
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={hrefWithLang}
+                    className={`relative block text-lg transition-all duration-300 ease-in-out  hover:text-foreground/800 ${
+                      isActive
+                        ? "text-foreground font-medium"
+                        : "text-foreground/60"
+                    }`}
+                  >
+                    <span className="capitalize">{link.name}</span>
+
+                    <span
+                      className={`absolute -bottom-1 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
+                        isActive ? "scale-x-100" : "scale-x-0"
+                      }
+                `}
+                    />
+                  </Link>
+                );
+              })}
+            </ul>
+            {/* Search Button */}
+            <div className="hidden lg:flex justify-start items-center px-2 flex-start min-w-2xs h-8 border border-border rounded-lg">
+              <label htmlFor="">
+                <Search></Search>
+              </label>
+              <button>
+                Type <kbd>/</kbd> to search
+              </button>
+            </div>
+            <label className="lg:hidden">
+              <Search></Search>
+            </label>
           </div>
         </div>
       </nav>
