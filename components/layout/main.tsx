@@ -2,7 +2,14 @@
 
 import * as React from "react";
 
-export default function Main({ children }: { children: React.ReactNode }) {
+// Import Some Self-defined Types
+import { MainProps } from "@/types";
+
+export default function Main({
+  lang,
+  dics,
+  children,
+}: React.PropsWithChildren<MainProps>) {
   return (
     <main className="min-h-210 bg-background text-foreground ">{children}</main>
   );

@@ -5,5 +5,11 @@
     "works": "Works",
     "writings": "writings",
     "contact": "Contact"
+  },
+  "main": {
+    "x":  "hello"
+  },
+  "footer": {
+    "y": "haha"
   }
 }

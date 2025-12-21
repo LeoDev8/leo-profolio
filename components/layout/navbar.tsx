@@ -5,21 +5,13 @@ import { usePathname } from "next/navigation";
 import { Search } from "lucide-react";
 import { useTheme } from "next-themes";
 
+// Import Some Self-defined Types
+import { NavbarProps } from "@/types";
+
 // Import some components ui
 import Logo from "../ui/logo";
 import Menubutton from "../ui/menu-button";
 import RouteDisplay from "../ui/route-display";
-
-interface NavbarProps {
-  lang: string;
-  dics: {
-    index: String;
-    profile: String;
-    works: String;
-    writings: String;
-    contact: String;
-  };
-}
 
 export default function Navbar({ lang, dics }: NavbarProps) {
   const pathname = usePathname();
@@ -70,7 +62,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             {/* Logo */}
             <Logo lang={lang} />
             {/* Route Display */}
-            <RouteDisplay />
+            <RouteDisplay lang={lang} />
             {/* Search Button */}
             {/* Avatar */}
           </div>

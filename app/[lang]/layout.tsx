@@ -21,8 +21,10 @@ export default async function Layout({
       className={`${timesSans.variable} ${kaitiSans.variable} ${fontClass} min-h-screen flex flex-col`}
     >
       <Navbar lang={lang} dics={dics.nav} />
-      <Main>{children}</Main>
-      <Footer></Footer>
+      <Main lang={lang} dics={dics.main}>
+        {children}
+      </Main>
+      <Footer lang={lang} dics={dics.footer} />
     </div>
   );
 }

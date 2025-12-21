@@ -5,5 +5,11 @@
     "works": "作品集",
     "writings": "随笔",
     "contact": "联系我"
+  },
+  "main": {
+    "x": "你好"
+  },
+  "footer": {
+    "y": "哈哈"
   }
 }
