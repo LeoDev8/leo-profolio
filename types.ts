@@ -18,7 +18,7 @@ export interface MainProps {
   };
 }
 
-export interface footerProps {
+export interface FooterProps {
   lang: String;
   dics: {
     y: String;
