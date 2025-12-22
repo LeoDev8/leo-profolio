@@ -9,8 +9,10 @@
   --color-foreground: var(--foreground);
   --color-border: var(--border);
   --color-logobackground: var(--logobackground);
-
-  --color-primary: #0070f3;
+  
+  /* Buttons in the Navbar */
+  --color-buttontext: var(--buttontext);
+  --color-buttonhoverbg: var(--buttonhoverbg);
 }
 
 /* Optional: Global resets */
@@ -26,16 +28,20 @@
   :root, .light {
     --background: #ffffff; 
     --foreground: #0a0a0a;
-    --border: #e5e5e5;
+    --border: #afafaf;
 
-    --logobackground: #50ff58;
+    --logobackground: #bebebe;
+    --buttontext: #afafaf;
+    --buttonhoverbg: rgb(250, 250, 250);
   }
 
   .dark {
     --background: #09090b;
     --foreground: #ededed; 
-    --border: #404040; 
+    --border: #666666; 
 
-    --logobackground: #697af9;
+    --logobackground: #666666;
+    --buttontext: rgb(145, 152, 161);
+    --buttonhoverbg: rgb(50, 50, 50);
   }
 }

@@ -4,7 +4,7 @@ import { NavbarProps } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const routeDisplayClassname = "text-xl font-extrabold";
+const routeDisplayClassname = "mr-2 font-extrabold";
 
 export default function RouteDisplay({ lang, dics }: NavbarProps) {
   const splitedPathname = usePathname().split(`/${lang}`).filter(Boolean);
@@ -19,7 +19,7 @@ export default function RouteDisplay({ lang, dics }: NavbarProps) {
     const routeKey = splitedPathname[0].split("/")[1] as keyof typeof dics;
     return (
       <Link
-        className={`${routeDisplayClassname} capitalize`}
+        className={`${routeDisplayClassname} capitalize `}
         href={`/${splitedPathname[0].split("/")[1]}`}
       >
         {dics[routeKey]}

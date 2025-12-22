@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search } from "lucide-react";
+import { Menu, Search, Moon, Sun, User } from "lucide-react";
 import { useTheme } from "next-themes";
 
 // Import Some Self-defined Types
@@ -10,8 +10,10 @@ import { NavbarProps } from "@/types";
 
 // Import some components ui
 import Logo from "../ui/logo";
-import Menubutton from "../ui/menu-button";
+import NavButton from "../ui/nav-button";
 import RouteDisplay from "../ui/route-display";
+import DarkmodeSwitch from "../ui/darkmode-switch";
+import Avatar from "../ui/avatar";
 
 export default function Navbar({ lang, dics }: NavbarProps) {
   const pathname = usePathname();
@@ -22,12 +24,11 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     { name: dics.writings, href: "/writings" },
     { name: dics.contact, href: "/contact" },
   ];
-  const { theme, setTheme } = useTheme();
-
+  
   return (
     <header>
       <nav className="fixed top-0 left-0 right-0 z-50 w-ful bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 h-16 flex  ">
           {/* <div>
             <button className="">
               <User className=""></User>
@@ -56,15 +57,38 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             </Link>
           </div> */}
           {/* 1. Mobile Design */}
-          <div className="flex justify-between items-center md:hidden lg:hidden">
-            {/* Menu Button */}
-            <Menubutton />
-            {/* Logo */}
-            <Logo lang={lang} />
-            {/* Route Display */}
-            <RouteDisplay lang={lang} dics={dics}/>
-            {/* Search Button */}
-            {/* Avatar */}
+          <div className="w-full flex justify-between items-center md:hidden lg:hidden">
+            {/* Left Side */}
+            <div className="flex items-center">
+              {/* Menu Button */}
+              <NavButton
+                onClick={() => {
+                  console.log("Menu Clicked");
+                }}
+                Icon={<Menu />}
+              />
+              {/* Logo */}
+              <Logo lang={lang} />
+              {/* Route Display */}
+              <RouteDisplay lang={lang} dics={dics} />
+            </div>
+
+            {/* Right Side */}
+            <div className="flex items-center">
+              {/* Search Button */}
+              <NavButton
+                onClick={() => {
+                  console.log("Search Clicked");
+                }}
+                Icon={<Search />}
+              />
+
+              {/* Dark Mode Switch */}
+              <DarkmodeSwitch />
+
+              {/* Avatar */}
+              <Avatar />
+            </div>
           </div>
 
           {/* 2. Middle Screen Design*/}
