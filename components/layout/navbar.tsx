@@ -19,7 +19,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     { name: dics.index, href: "/" },
     { name: dics.profile, href: "/profile" },
     { name: dics.works, href: "/works" },
-    { name: dics.writings, href: "/writing" },
+    { name: dics.writings, href: "/writings" },
     { name: dics.contact, href: "/contact" },
   ];
   const { theme, setTheme } = useTheme();
@@ -62,7 +62,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             {/* Logo */}
             <Logo lang={lang} />
             {/* Route Display */}
-            <RouteDisplay lang={lang} />
+            <RouteDisplay lang={lang} dics={dics}/>
             {/* Search Button */}
             {/* Avatar */}
           </div>

@@ -17,7 +17,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning className="bg-background text-foreground">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
