@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Search, Moon, Sun, User } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Menu, Search} from "lucide-react";
 
 // Import Some Self-defined Types
 import { NavbarProps } from "@/types";
@@ -14,6 +13,7 @@ import NavButton from "../ui/nav-button";
 import RouteDisplay from "../ui/route-display";
 import DarkmodeSwitch from "../ui/darkmode-switch";
 import Avatar from "../ui/avatar";
+import LangSwitch from "../ui/lang-switch";
 
 export default function Navbar({ lang, dics }: NavbarProps) {
   const pathname = usePathname();
@@ -24,38 +24,11 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     { name: dics.writings, href: "/writings" },
     { name: dics.contact, href: "/contact" },
   ];
-  
+
   return (
     <header>
       <nav className="fixed top-0 left-0 right-0 z-50 w-ful bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 h-16 flex  ">
-          {/* <div>
-            <button className="">
-              <User className=""></User>
-            </button>
-
-            <Link
-              href={`/en`}
-              className={
-                lang === "en"
-                  ? "text-foreground font-bold font-times"
-                  : "hover:text-foreground font-times"
-              }
-            >
-              English
-            </Link>
-            <span>/</span>
-            <Link
-              href={`/zh`}
-              className={
-                lang === "zh"
-                  ? "text-foreground font-bold font-kaiti"
-                  : "hover:text-foreground font-kaiti"
-              }
-            >
-              简体中文
-            </Link>
-          </div> */}
           {/* 1. Mobile Design */}
           <div className="w-full flex justify-between items-center md:hidden lg:hidden">
             {/* Left Side */}
@@ -74,7 +47,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             </div>
 
             {/* Right Side */}
-            <div className="flex items-center">
+            <div className="flex items-center space-x-2">
               {/* Search Button */}
               <NavButton
                 onClick={() => {
@@ -85,6 +58,9 @@ export default function Navbar({ lang, dics }: NavbarProps) {
 
               {/* Dark Mode Switch */}
               <DarkmodeSwitch />
+
+              {/* Language Switch */}
+              <LangSwitch lang={lang} />
 
               {/* Avatar */}
               <Avatar />
