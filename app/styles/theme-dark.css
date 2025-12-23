@@ -1,0 +1,11 @@
+@layer base {
+  .dark {
+    --background: #09090b;
+    --foreground: #ededed; 
+    --border: #666666; 
+
+    --logobackground: #666666;
+    --buttontext: rgb(145, 152, 161);
+    --buttonhoverbg: rgb(50, 50, 50);
+  }
+}

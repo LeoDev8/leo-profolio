@@ -1,9 +1,9 @@
 import "@/app/globals.css";
 import { timesSans, kaitiSans } from "@/libs/fonts";
+import { getDictionary } from "@/libs/dictionaries";
 import Navbar from "@/components/layout/navbar";
 import Main from "@/components/layout/main";
 import Footer from "@/components/layout/footer";
-import { getDictionary } from "@/libs/dictionaries";
 
 export default async function Layout({
   children,
