@@ -9,7 +9,7 @@ export default function Navbutton({
 }: NavButtonProps) {
   return (
     <button
-      className={`[&_svg]:w-4.5 [&_svg]:h-4.5 text-buttontext w-8 h-8 hover:bg-buttonhoverbg rounded-lg flex justify-center items-center border border-border cursor-pointer ${
+      className={`[&_svg]:w-4.5 [&_svg]:h-4.5 text-buttontext w-8 h-8 rounded-lg flex justify-center items-center border border-border cursor-pointer hover:bg-buttonhoverbg ${
         className || ""
       }`}
       {...props}

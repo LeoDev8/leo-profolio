@@ -24,3 +24,8 @@ export interface FooterProps {
     y: String;
   };
 }
+
+export interface SidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+}

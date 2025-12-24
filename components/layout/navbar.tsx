@@ -10,11 +10,11 @@ import { NavbarProps } from "@/types";
 
 // Import some components ui
 import Logo from "../ui/logo";
-import NavButton from "../ui/nav-button";
-import RouteDisplay from "../ui/route-display";
-import DarkmodeSwitch from "../ui/darkmode-switch";
+import NavButton from "../ui/navbar/nav-button";
+import RouteDisplay from "../ui/navbar/route-display";
+import DarkmodeSwitch from "../ui/navbar/darkmode-switch";
 import Avatar from "../ui/avatar";
-import LangSwitch from "../ui/lang-switch";
+import LangSwitch from "../ui/navbar/lang-switch";
 import SideBar from "@/components/layout/sidebar";
 
 export default function Navbar({ lang, dics }: NavbarProps) {
@@ -169,9 +169,8 @@ export default function Navbar({ lang, dics }: NavbarProps) {
             </div>
           </div>
         </nav>
+        <SideBar isOpen={isSidebarOpen} onClose={closeSidebar} />
       </header>
-
-      <SideBar isOpen={isSidebarOpen} onClose={closeSidebar} />
     </>
   );
 }

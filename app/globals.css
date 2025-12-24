@@ -3,20 +3,7 @@
 @import "./styles/theme-light.css";
 @import "./styles//theme-dark.css";
 
-@theme {
-  /* 1. Name the font class "font-times" and link it to your JS variable */
-  --font-times: var(--font-times); 
-  --font-kaiti: var(--font-kaiti);
-
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-border: var(--border);
-  --color-logobackground: var(--logobackground);
-  
-  /* Buttons in the Navbar */
-  --color-buttontext: var(--buttontext);
-  --color-buttonhoverbg: var(--buttonhoverbg);
-}
+@import "./styles//varibles.css";
 
 /* Optional: Global resets */
 @layer base {
