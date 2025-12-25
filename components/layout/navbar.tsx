@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, Search } from "lucide-react";
 
 // Import Some Self-defined Types
@@ -27,13 +27,21 @@ export default function Navbar({ lang, dics }: NavbarProps) {
     { name: dics.contact, href: "/contact" },
   ];
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const openSidebar = () => setSidebarOpen(true);
   const closeSidebar = () => setSidebarOpen(false);
 
-  return (
+  return !isMounted ? (
+    <p>loading...</p>
+  ) : (
     <>
       <header>
-        <nav className="fixed top-0 left-0 right-0 z-10 w-ful bg-background/80 backdrop-blur-md border-b border-border">
+        <nav className="fixed top-0 left-0 right-0 z-50 w-ful bg-background/80 backdrop-blur-md  border-border">
           <div className="max-w-7xl mx-auto px-4 h-16 flex  ">
             {/* 1. Mobile Design */}
             <div className="w-full flex justify-between items-center md:hidden lg:hidden">
@@ -61,7 +69,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
                 <DarkmodeSwitch />
 
                 {/* Language Switch */}
-                <LangSwitch lang={lang} />
+                <LangSwitch />
 
                 {/* Avatar */}
                 <Avatar />

@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "index": "主頁",
+    "profile": "簡介",
+    "works": "作品集",
+    "writings": "隨筆",
+    "contact": "聯繫我"
+  },
+  "main": {
+    "x": "你好嗎"
+  },
+  "footer": {
+    "y": ""
+  }
+}

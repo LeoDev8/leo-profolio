@@ -4,13 +4,14 @@ import { getDictionary } from "@/libs/dictionaries";
 import Navbar from "@/components/layout/navbar";
 import Main from "@/components/layout/main";
 import Footer from "@/components/layout/footer";
+import { LOCALES } from "@/config/locales";
 
 export default async function Layout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "zh" }>;
+  params: Promise<{ lang: keyof typeof LOCALES }>;
 }>) {
   const { lang } = await params;
   const fontClass = lang === "zh" ? "font-lang-zh" : "font-lang-en";
