@@ -13,7 +13,6 @@ import Logo from "../ui/logo";
 import NavButton from "../ui/navbar/nav-button";
 import RouteDisplay from "../ui/navbar/route-display";
 import DarkmodeSwitch from "../ui/navbar/darkmode-switch";
-import Avatar from "../ui/avatar";
 import LangSwitch from "../ui/navbar/lang-switch";
 import SideBar from "@/components/layout/sidebar";
 
@@ -70,9 +69,6 @@ export default function Navbar({ lang, dics }: NavbarProps) {
 
                 {/* Language Switch */}
                 <LangSwitch />
-
-                {/* Avatar */}
-                <Avatar />
               </div>
             </div>
 
