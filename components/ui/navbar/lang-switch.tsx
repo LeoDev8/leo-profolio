@@ -50,7 +50,7 @@ export default function LangSwitch() {
         }}
       />
       <div
-        className={`absolute z-20 w-20 top-10 border border-border rounded-lg transition-all duration-300 ${
+        className={`absolute z-20 w-20 right-0 top-10 border border-border rounded-lg transition-all duration-300 ${
           !isOpen ? "opacity-0 invisible" : "opacity-100 visible"
         }`}
       >
