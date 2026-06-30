@@ -2,6 +2,8 @@ import mysql from "mysql2/promise";
 
 import { databaseName, getConnectionOptions, quoteIdentifier } from "./config.mjs";
 
+console.log(databaseName,getConnectionOptions())
+
 const connection = await mysql.createConnection(
   getConnectionOptions({ includeDatabase: false }),
 );
