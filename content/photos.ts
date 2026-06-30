@@ -1,3 +1,5 @@
+import photoSeed from "@/db/seed/photos.json";
+
 export type PhotoExposure = {
   shutter: string;
   aperture: string;
@@ -6,6 +8,7 @@ export type PhotoExposure = {
 };
 
 export type PhotoWork = {
+  slug: string;
   title: string;
   location: string;
   date: string;
@@ -128,58 +131,12 @@ export const photoCopy = {
 
 export const fallbackPhotoCopy = photoCopy.en;
 
-export const photoWorks = [
-  {
-    title: "After Rain",
-    location: "City Walk",
-    date: "2026",
-    orientation: "landscape",
-    featured: true,
-    alt: "A finished color-graded city photograph after rain.",
-    exposure: {
-      shutter: "1/250s",
-      aperture: "f/4",
-      iso: "200",
-      focalLength: "35mm",
-    },
-  },
-  {
-    title: "Quiet Platform",
-    location: "Travel",
-    date: "2026",
-    orientation: "portrait",
-    alt: "A vertical travel photograph with quiet light.",
-    exposure: {
-      shutter: "1/125s",
-      aperture: "f/2.8",
-      iso: "400",
-      focalLength: "50mm",
-    },
-  },
-  {
-    title: "Late Window",
-    location: "Daily Fragment",
-    date: "2026",
-    orientation: "square",
-    alt: "A square daily-life photograph shaped by window light.",
-    exposure: {
-      shutter: "1/80s",
-      aperture: "f/2",
-      iso: "800",
-      focalLength: "35mm",
-    },
-  },
-  {
-    title: "Crossing Light",
-    location: "Street",
-    date: "2026",
-    orientation: "landscape",
-    alt: "A street photograph with crossing light and shadow.",
-    exposure: {
-      shutter: "1/500s",
-      aperture: "f/5.6",
-      iso: "160",
-      focalLength: "28mm",
-    },
-  },
-] satisfies PhotoWork[];
+function normalizePhotoWork(photo: (typeof photoSeed)[number]): PhotoWork {
+  return {
+    ...photo,
+    src: photo.src ?? undefined,
+    orientation: photo.orientation as PhotoWork["orientation"],
+  };
+}
+
+export const photoWorks = photoSeed.map(normalizePhotoWork);

@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
+    "db:create": "node scripts/db/create-database.mjs",
+    "db:migrate": "node scripts/db/migrate.mjs",
+    "db:seed:photos": "node scripts/db/seed-photos.mjs",
+    "db:setup": "npm run db:create && npm run db:migrate && npm run db:seed:photos",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
+    "mysql2": "^3.15.3",
     "next": "^16.2.9",
     "next-themes": "^0.4.6",
     "react": "19.2.1",

@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS photo_works (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  slug VARCHAR(160) NOT NULL,
+  title VARCHAR(180) NOT NULL,
+  location VARCHAR(180) NOT NULL,
+  captured_at VARCHAR(80) NOT NULL,
+  orientation ENUM('portrait', 'landscape', 'square') NOT NULL DEFAULT 'landscape',
+  src VARCHAR(500) NULL,
+  alt VARCHAR(500) NOT NULL,
+  shutter VARCHAR(40) NOT NULL,
+  aperture VARCHAR(40) NOT NULL,
+  iso VARCHAR(40) NOT NULL,
+  focal_length VARCHAR(40) NULL,
+  featured BOOLEAN NOT NULL DEFAULT FALSE,
+  published BOOLEAN NOT NULL DEFAULT TRUE,
+  sort_order INT NOT NULL DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  UNIQUE KEY photo_works_slug_unique (slug),
+  KEY photo_works_published_sort_index (published, sort_order, id),
+  KEY photo_works_featured_index (featured)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
