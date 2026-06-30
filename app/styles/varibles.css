@@ -11,9 +11,18 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-glass: var(--glass);
+  --color-glass-strong: var(--glass-strong);
+  --color-glass-border: var(--glass-border);
+  --color-glass-highlight: var(--glass-highlight);
   --color-logobackground: var(--logobackground);
   
   /* Buttons in the Navbar */
   --color-buttontext: var(--buttontext);
   --color-buttonhoverbg: var(--buttonhoverbg);
+
+  --shadow-glass: var(--shadow-glass);
+  --shadow-glass-inner: inset 0 1px 0 var(--glass-highlight);
+  --blur-glass: var(--blur-glass);
+  --duration-motion: var(--motion-duration);
 }

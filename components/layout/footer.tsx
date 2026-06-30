@@ -1,14 +1,10 @@
 "use client";
 
 import { FooterProps } from "@/types";
-import React from "react";
 
-export default function Footer({
-  lang,
-  dics,
-}: FooterProps) {
+export default function Footer({}: FooterProps) {
   return (
-    <footer className="w-full bg-background text-foreground text-center py-6">
+    <footer className="w-full border-t border-glass-border bg-glass/50 py-6 text-center text-sm text-muted backdrop-blur-md">
       Copyright© 2025 Leo Profolio
     </footer>
   );

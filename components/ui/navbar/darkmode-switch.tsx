@@ -4,9 +4,16 @@ import { useTheme } from "next-themes";
 
 export default function DarkmodeSwitch() {
   const { theme, setTheme } = useTheme();
+
   return (
     <Navbutton
-      Icon={theme === "dark" ? <Moon /> : <Sun />}
+      aria-label="Toggle color theme"
+      Icon={
+        <>
+          <Sun className="dark:hidden" />
+          <Moon className="hidden dark:block" />
+        </>
+      }
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}

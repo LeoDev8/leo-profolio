@@ -113,7 +113,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
 
   return (
     <header>
-      <nav className="fixed left-0 right-0 top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
+      <nav className="fixed left-0 right-0 top-0 z-50 border-b border-glass-border bg-glass/80 shadow-glass-inner backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
           <div className="flex w-full items-center justify-between gap-4">
             <div className="flex min-w-0 items-center gap-2">

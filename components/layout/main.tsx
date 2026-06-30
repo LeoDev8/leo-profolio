@@ -6,11 +6,12 @@ import * as React from "react";
 import { MainProps } from "@/types";
 
 export default function Main({
-  lang,
-  dics,
   children,
 }: React.PropsWithChildren<MainProps>) {
   return (
-    <main className="min-h-210 bg-background text-foreground ">{children}</main>
+    <main className="relative min-h-screen overflow-hidden bg-background/80 text-foreground">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.08),transparent)]" />
+      <div className="relative z-10">{children}</div>
+    </main>
   );
 }

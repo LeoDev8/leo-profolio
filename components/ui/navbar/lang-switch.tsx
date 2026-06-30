@@ -5,15 +5,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { LOCALES, LocaleKey } from "@/config/locales";
 import { Globe } from "lucide-react";
-import { getCurrentLang, changeLangPathname } from "@/libs/utils";
+import { changeLangPathname } from "@/libs/utils";
 import Navbutton from "./nav-button";
 
 export default function LangSwitch() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-
-  const curLang = getCurrentLang(pathname);
 
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -50,7 +48,7 @@ export default function LangSwitch() {
         }}
       />
       <div
-        className={`absolute z-20 w-20 right-0 top-10 border border-border rounded-lg transition-all duration-300 ${
+        className={`absolute z-20 w-24 right-0 top-10 border border-glass-border rounded-lg bg-glass-strong py-1 shadow-glass backdrop-blur-md transition-all duration-motion ${
           !isOpen ? "opacity-0 invisible" : "opacity-100 visible"
         }`}
       >
@@ -63,7 +61,7 @@ export default function LangSwitch() {
               onClick={() => {
                 handleSwitch(langKey);
               }}
-              className={`w-full my-2 text-sm cursor-pointer transition-colors duration-300 ${
+              className={`w-full px-3 py-1.5 text-left text-sm cursor-pointer transition-colors duration-motion ${
                 isActive
                   ? "text-foreground border-foreground cursor-default"
                   : "text-foreground/50 border-border hover:text-foreground"

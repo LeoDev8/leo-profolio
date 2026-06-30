@@ -9,6 +9,13 @@
     --border: #d9ded8;
     --accent: #4f8f7b;
     --accent-foreground: #ffffff;
+    --glass: rgb(255 255 255 / 0.62);
+    --glass-strong: rgb(255 255 255 / 0.78);
+    --glass-border: rgb(79 143 123 / 0.22);
+    --glass-highlight: rgb(255 255 255 / 0.62);
+    --shadow-glass: 0 18px 60px rgb(36 61 52 / 0.12);
+    --blur-glass: 18px;
+    --motion-duration: 260ms;
 
     --logobackground: #e3e8e2;
     --buttontext: #65716a;
