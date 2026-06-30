@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "db:create": "node scripts/db/create-database.mjs",
-    "db:migrate": "node scripts/db/migrate.mjs",
-    "db:seed:photos": "node scripts/db/seed-photos.mjs",
-    "db:setup": "npm run db:create && npm run db:migrate && npm run db:seed:photos",
+    "db:create": "node --env-file=.env scripts/db/create-database.mjs",
+    "db:migrate": "node --env-file=.env scripts/db/migrate.mjs",
+    "db:seed:photos": "node --env-file=.env scripts/db/seed-photos.mjs",
+    "db:setup": "npm run --env-file=.env db:create && npm run db:migrate && npm run db:seed:photos",
+    "db:test": "node --env-file=.env scripts/db/test_mysql_connection.mjs",
     "start": "next start",
     "lint": "eslint"
   },
