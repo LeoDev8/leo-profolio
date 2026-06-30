@@ -1,0 +1,1002 @@
+0 verbose cli /opt/homebrew/Cellar/node/25.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@11.11.0
+2 info using node@v25.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/leo/MyFolder/myProjects/leo-profolio/.npmrc
+5 silly config load:file:/Users/leo/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "./.npm-cache" "--loglevel" "warn"
+9 verbose logfile logs-max:10 dir:/Users/leo/MyFolder/myProjects/leo-profolio/.npm-cache/_logs/2026-06-20T12_36_59_948Z-
+10 verbose logfile /Users/leo/MyFolder/myProjects/leo-profolio/.npm-cache/_logs/2026-06-20T12_36_59_948Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+14 silly idealTree buildDeps
+15 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/acorn' ]
+16 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/ajv' ]
+17 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/axe-core' ]
+18 silly reify mark retired [
+18 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/baseline-browser-mapping'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/caniuse-lite'
+19 silly reify ]
+20 silly reify mark retired [
+20 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/electron-to-chromium'
+20 silly reify ]
+21 silly reify mark retired [
+21 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/enhanced-resolve'
+21 silly reify ]
+22 silly reify mark retired [
+22 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint-config-next'
+22 silly reify ]
+23 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint' ]
+24 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/esquery' ]
+25 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/fastq' ]
+26 silly reify mark retired [
+26 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/get-tsconfig'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lightningcss'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lightningcss-darwin-arm64'
+28 silly reify ]
+29 silly reify mark retired [
+29 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lucide-react'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/minimatch'
+30 silly reify ]
+31 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/next' ]
+32 silly reify mark retired [
+32 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/next-themes'
+32 silly reify ]
+33 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/react' ]
+34 silly reify mark retired [
+34 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/react-dom'
+34 silly reify ]
+35 silly reify mark retired [
+35 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tailwindcss'
+35 silly reify ]
+36 silly reify mark retired [
+36 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tailwind-merge'
+36 silly reify ]
+37 silly reify mark retired [
+37 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/ts-api-utils'
+37 silly reify ]
+38 silly reify mark retired [
+38 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/typescript-eslint'
+38 silly reify ]
+39 silly reify mark retired [
+39 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/which-typed-array'
+39 silly reify ]
+40 silly reify mark retired [ '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/zod' ]
+41 silly reify mark retired [
+41 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/code-frame'
+41 silly reify ]
+42 silly reify mark retired [
+42 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/compat-data'
+42 silly reify ]
+43 silly reify mark retired [
+43 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/generator'
+43 silly reify ]
+44 silly reify mark retired [
+44 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/core'
+44 silly reify ]
+45 silly reify mark retired [
+45 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-compilation-targets'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-module-transforms'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-module-imports'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/parser'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helpers'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/template'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/traverse'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/types'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/core'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/runtime'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/eslintrc'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/js'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint-community/eslint-utils'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@img/colour'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/env'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/swc-darwin-arm64'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/eslint-plugin-next'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/node'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/oxide-darwin-arm64'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/postcss'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/oxide'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/react'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/node'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/eslint-plugin'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/parser'
+69 silly reify ]
+70 silly reify mark retired [
+70 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/project-service'
+70 silly reify ]
+71 silly reify mark retired [
+71 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/scope-manager'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/tsconfig-utils'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/types'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/typescript-estree'
+74 silly reify ]
+75 silly reify mark retired [
+75 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/type-utils'
+75 silly reify ]
+76 silly reify mark retired [
+76 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/utils'
+76 silly reify ]
+77 silly reify mark retired [
+77 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/visitor-keys'
+77 silly reify ]
+78 silly reify mark retired [
+78 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/browserslist',
+78 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/browserslist'
+78 silly reify ]
+79 silly reify mark retired [
+79 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint-plugin-react/node_modules/resolve'
+79 silly reify ]
+80 silly reify mark retired [
+80 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/is-bun-module/node_modules/semver'
+80 silly reify ]
+81 silly reify mark retired [
+81 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/js-yaml',
+81 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/js-yaml'
+81 silly reify ]
+82 silly reify mark retired [
+82 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/jsesc',
+82 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/jsesc'
+82 silly reify ]
+83 silly reify mark retired [
+83 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/jiti',
+83 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/jiti'
+83 silly reify ]
+84 silly reify mark retired [
+84 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/json5',
+84 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/json5'
+84 silly reify ]
+85 silly reify mark retired [
+85 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/loose-envify',
+85 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/loose-envify'
+85 silly reify ]
+86 silly reify mark retired [
+86 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/nanoid',
+86 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/nanoid'
+86 silly reify ]
+87 silly reify mark retired [
+87 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/napi-postinstall',
+87 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/napi-postinstall'
+87 silly reify ]
+88 silly reify mark retired [
+88 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/resolve',
+88 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/resolve'
+88 silly reify ]
+89 silly reify mark retired [
+89 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/semver',
+89 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/semver'
+89 silly reify ]
+90 silly reify mark retired [
+90 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/sharp/node_modules/semver'
+90 silly reify ]
+91 silly reify mark retired [
+91 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/json5',
+91 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/.bin/json5'
+91 silly reify ]
+92 silly reify mark retired [
+92 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/typescript',
+92 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/tsc',
+92 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/tsserver'
+92 silly reify ]
+93 silly reify mark retired [
+93 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/update-browserslist-db',
+93 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/update-browserslist-db'
+93 silly reify ]
+94 silly reify mark retired [
+94 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/which',
+94 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/node-which'
+94 silly reify ]
+95 silly reify moves {
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/acorn': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.acorn-nkJ94p6p',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/ajv': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.ajv-v1FXVbtK',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/axe-core': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.axe-core-ACcnxStF',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/baseline-browser-mapping': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.baseline-browser-mapping-DePCDw1i',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/caniuse-lite': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.caniuse-lite-C8E0dEiF',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/electron-to-chromium': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.electron-to-chromium-K3203UuG',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/enhanced-resolve': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.enhanced-resolve-SaHNiQ8o',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint-config-next': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.eslint-config-next-lxqhSltS',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.eslint-uCO6HTjZ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/esquery': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.esquery-oKTxzxkL',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/fastq': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.fastq-fwf7p2v6',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/get-tsconfig': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.get-tsconfig-rj0Dyjro',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lightningcss': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.lightningcss-n9G6FSiU',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lightningcss-darwin-arm64': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.lightningcss-darwin-arm64-zeDEvRux',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/lucide-react': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.lucide-react-OTf75Jo8',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/minimatch': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.minimatch-v482h8wQ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/next': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.next-2eTX6Bau',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/next-themes': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.next-themes-7WN7tnUf',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/react': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.react-e54DPj1d',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/react-dom': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.react-dom-KjbRAMQi',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tailwindcss': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.tailwindcss-N5V2awUh',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tailwind-merge': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.tailwind-merge-RmfXt558',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/ts-api-utils': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.ts-api-utils-FLaPm32w',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/typescript-eslint': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.typescript-eslint-ll9vVBou',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/which-typed-array': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.which-typed-array-1tuiIW5n',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/zod': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.zod-0OMfay1O',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/code-frame': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.code-frame-nCFCaRt4',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/compat-data': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.compat-data-wp5Lt96W',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/generator': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.generator-K6pOK3nZ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/core': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.core-mblEg1wM',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-compilation-targets': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.helper-compilation-targets-nYgcFuDF',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-module-transforms': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.helper-module-transforms-srWaJxZm',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helper-module-imports': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.helper-module-imports-4r0JyP8X',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/parser': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.parser-CNenk7MX',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/helpers': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.helpers-k2EmEg1O',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/template': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.template-tIMK5WQ8',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/traverse': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.traverse-RZNd7ylY',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/types': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@babel/.types-eBvjPGbu',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/core': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/.core-FTANFKEz',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/runtime': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@emnapi/.runtime-BIMkf4Hm',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/eslintrc': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/.eslintrc-Hbk5iDvw',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/js': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint/.js-BFsz3P0H',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint-community/eslint-utils': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@eslint-community/.eslint-utils-JOSftvVe',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@img/colour': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@img/.colour-vvcHUs0p',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/env': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/.env-GYH7Iv0d',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/swc-darwin-arm64': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/.swc-darwin-arm64-J2h9XTQA',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/eslint-plugin-next': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@next/.eslint-plugin-next-i6XkLVhf',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/node': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/.node-LlzJBRE1',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/oxide-darwin-arm64': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/.oxide-darwin-arm64-vjjkjArL',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/postcss': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/.postcss-c1sRhYkt',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/oxide': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@tailwindcss/.oxide-Y4SgqAgI',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/react': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/.react-qRqi6l0I',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/node': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@types/.node-oJYUE3UF',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/eslint-plugin': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.eslint-plugin-wGJ7ArYM',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/parser': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.parser-RZJSnqyI',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/project-service': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.project-service-u2DLBJti',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/scope-manager': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.scope-manager-1GQQiG2q',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/tsconfig-utils': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.tsconfig-utils-neDHOpFS',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/types': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.types-PivDoSeQ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/typescript-estree': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.typescript-estree-eOgHs7ud',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/type-utils': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.type-utils-dILqHR68',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/utils': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.utils-eScYb4qK',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/visitor-keys': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/@typescript-eslint/.visitor-keys-zdMXu7ED',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/browserslist': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.browserslist-zzBBcJyW',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/browserslist': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.browserslist-4Q87A100',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint-plugin-react/node_modules/resolve': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/eslint-plugin-react/node_modules/.resolve-2TZ4SgzZ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/is-bun-module/node_modules/semver': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/is-bun-module/node_modules/.semver-7hRoFRtg',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/js-yaml': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.js-yaml-8Qjj2Ylq',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/js-yaml': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.js-yaml-j6lc7MPu',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/jsesc': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.jsesc-FeXg6x8g',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/jsesc': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.jsesc-Gsod8XFG',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/jiti': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.jiti-c3lw2jIb',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/jiti': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.jiti-oslWEGmr',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/json5': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.json5-RxAMRup0',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/json5': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.json5-KfHnSEit',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/loose-envify': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.loose-envify-KIC0OLTA',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/loose-envify': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.loose-envify-uZQ6Yub8',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/nanoid': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.nanoid-TANiQ0mU',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/nanoid': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.nanoid-LFwK93UR',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/napi-postinstall': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.napi-postinstall-7q47rrSf',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/napi-postinstall': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.napi-postinstall-upamIevL',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/resolve': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.resolve-a1nZxT3V',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/resolve': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.resolve-bztYhjV1',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/semver': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.semver-DPOwOTYw',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/semver': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.semver-lwLq9qBm',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/sharp/node_modules/semver': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/sharp/node_modules/.semver-Mbd1awVy',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/json5': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/.json5-kJ4EHu0F',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/.bin/json5': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/tsconfig-paths/node_modules/.bin/.json5-FlamC4ap',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/typescript': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.typescript-BbTKJTPA',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/tsc': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.tsc-nNvcMxNn',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/tsserver': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.tsserver-RP6uPcsQ',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/update-browserslist-db': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.update-browserslist-db-DTqvgpOE',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/update-browserslist-db': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.update-browserslist-db-CcOBo4k8',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/which': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.which-ZfeyqJwu',
+95 silly reify   '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/node-which': '/Users/leo/MyFolder/myProjects/leo-profolio/node_modules/.bin/.node-which-LHYB7AhT'
+95 silly reify }
+96 silly audit bulk request {
+96 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+96 silly audit   '@babel/code-frame': [ '7.27.1' ],
+96 silly audit   '@babel/compat-data': [ '7.28.5' ],
+96 silly audit   '@babel/core': [ '7.28.5' ],
+96 silly audit   '@babel/generator': [ '7.28.5' ],
+96 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+96 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+96 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+96 silly audit   '@babel/helper-module-transforms': [ '7.28.3' ],
+96 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+96 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+96 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+96 silly audit   '@babel/helpers': [ '7.28.4' ],
+96 silly audit   '@babel/parser': [ '7.28.5' ],
+96 silly audit   '@babel/template': [ '7.27.2' ],
+96 silly audit   '@babel/traverse': [ '7.28.5' ],
+96 silly audit   '@babel/types': [ '7.28.5' ],
+96 silly audit   '@emnapi/core': [ '1.7.1' ],
+96 silly audit   '@emnapi/runtime': [ '1.7.1' ],
+96 silly audit   '@emnapi/wasi-threads': [ '1.1.0' ],
+96 silly audit   '@eslint-community/eslint-utils': [ '4.9.0' ],
+96 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.1' ],
+96 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+96 silly audit   '@eslint/config-array': [ '0.21.1' ],
+96 silly audit   '@eslint/config-helpers': [ '0.4.2' ],
+96 silly audit   '@eslint/core': [ '0.17.0' ],
+96 silly audit   '@eslint/eslintrc': [ '3.3.3' ],
+96 silly audit   '@eslint/js': [ '9.39.2' ],
+96 silly audit   '@eslint/object-schema': [ '2.1.7' ],
+96 silly audit   '@eslint/plugin-kit': [ '0.4.1' ],
+96 silly audit   '@humanfs/core': [ '0.19.1' ],
+96 silly audit   '@humanfs/node': [ '0.16.7' ],
+96 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+96 silly audit   '@humanwhocodes/retry': [ '0.4.3' ],
+96 silly audit   '@img/colour': [ '1.0.0' ],
+96 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+96 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+96 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+96 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+96 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+96 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+96 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+96 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+96 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+96 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+96 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+96 silly audit   '@next/env': [ '16.0.10' ],
+96 silly audit   '@next/eslint-plugin-next': [ '16.0.10' ],
+96 silly audit   '@next/swc-darwin-arm64': [ '16.0.10' ],
+96 silly audit   '@next/swc-darwin-x64': [ '16.0.10' ],
+96 silly audit   '@next/swc-linux-arm64-gnu': [ '16.0.10' ],
+96 silly audit   '@next/swc-linux-arm64-musl': [ '16.0.10' ],
+96 silly audit   '@next/swc-linux-x64-gnu': [ '16.0.10' ],
+96 silly audit   '@next/swc-linux-x64-musl': [ '16.0.10' ],
+96 silly audit   '@next/swc-win32-arm64-msvc': [ '16.0.10' ],
+96 silly audit   '@next/swc-win32-x64-msvc': [ '16.0.10' ],
+96 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+96 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+96 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+96 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+96 silly audit   '@rtsao/scc': [ '1.1.0' ],
+96 silly audit   '@swc/helpers': [ '0.5.15' ],
+96 silly audit   '@tailwindcss/node': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.18' ],
+96 silly audit   '@tailwindcss/postcss': [ '4.1.18' ],
+96 silly audit   '@tybys/wasm-util': [ '0.10.1' ],
+96 silly audit   '@types/estree': [ '1.0.8' ],
+96 silly audit   '@types/json-schema': [ '7.0.15' ],
+96 silly audit   '@types/json5': [ '0.0.29' ],
+96 silly audit   '@types/node': [ '20.19.27' ],
+96 silly audit   '@types/react': [ '19.2.7' ],
+96 silly audit   '@types/react-dom': [ '19.2.3' ],
+96 silly audit   '@typescript-eslint/eslint-plugin': [ '8.50.0' ],
+96 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+96 silly audit   '@typescript-eslint/parser': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/project-service': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/scope-manager': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/type-utils': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/types': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/typescript-estree': [ '8.50.0' ],
+96 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+96 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+96 silly audit   semver: [ '7.7.3', '6.3.1' ],
+96 silly audit   '@typescript-eslint/utils': [ '8.50.0' ],
+96 silly audit   '@typescript-eslint/visitor-keys': [ '8.50.0' ],
+96 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+96 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+96 silly audit   acorn: [ '8.15.0' ],
+96 silly audit   'acorn-jsx': [ '5.3.2' ],
+96 silly audit   ajv: [ '6.12.6' ],
+96 silly audit   'ansi-styles': [ '4.3.0' ],
+96 silly audit   argparse: [ '2.0.1' ],
+96 silly audit   'aria-query': [ '5.3.2' ],
+96 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+96 silly audit   'array-includes': [ '3.1.9' ],
+96 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+96 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+96 silly audit   'array.prototype.flat': [ '1.3.3' ],
+96 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+96 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+96 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+96 silly audit   'ast-types-flow': [ '0.0.8' ],
+96 silly audit   'async-function': [ '1.0.0' ],
+96 silly audit   'available-typed-arrays': [ '1.0.7' ],
+96 silly audit   'axe-core': [ '4.11.0' ],
+96 silly audit   'axobject-query': [ '4.1.0' ],
+96 silly audit   'balanced-match': [ '1.0.2' ],
+96 silly audit   'baseline-browser-mapping': [ '2.9.8' ],
+96 silly audit   braces: [ '3.0.3' ],
+96 silly audit   browserslist: [ '4.28.1' ],
+96 silly audit   'call-bind': [ '1.0.8' ],
+96 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+96 silly audit   'call-bound': [ '1.0.4' ],
+96 silly audit   callsites: [ '3.1.0' ],
+96 silly audit   'caniuse-lite': [ '1.0.30001760' ],
+96 silly audit   chalk: [ '4.1.2' ],
+96 silly audit   'client-only': [ '0.0.1' ],
+96 silly audit   clsx: [ '2.1.1' ],
+96 silly audit   'color-convert': [ '2.0.1' ],
+96 silly audit   'color-name': [ '1.1.4' ],
+96 silly audit   'concat-map': [ '0.0.1' ],
+96 silly audit   'convert-source-map': [ '2.0.0' ],
+96 silly audit   'cross-spawn': [ '7.0.6' ],
+96 silly audit   csstype: [ '3.2.3' ],
+96 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+96 silly audit   'data-view-buffer': [ '1.0.2' ],
+96 silly audit   'data-view-byte-length': [ '1.0.2' ],
+96 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+96 silly audit   debug: [ '4.4.3', '3.2.7' ],
+96 silly audit   'deep-is': [ '0.1.4' ],
+96 silly audit   'define-data-property': [ '1.1.4' ],
+96 silly audit   'define-properties': [ '1.2.1' ],
+96 silly audit   'detect-libc': [ '2.1.2' ],
+96 silly audit   doctrine: [ '2.1.0' ],
+96 silly audit   'dunder-proto': [ '1.0.1' ],
+96 silly audit   'electron-to-chromium': [ '1.5.267' ],
+96 silly audit   'emoji-regex': [ '9.2.2' ],
+96 silly audit   'enhanced-resolve': [ '5.18.4' ],
+96 silly audit   'es-abstract': [ '1.24.1' ],
+96 silly audit   'es-define-property': [ '1.0.1' ],
+96 silly audit   'es-errors': [ '1.3.0' ],
+96 silly audit   'es-iterator-helpers': [ '1.2.2' ],
+96 silly audit   'es-object-atoms': [ '1.1.1' ],
+96 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+96 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+96 silly audit   'es-to-primitive': [ '1.3.0' ],
+96 silly audit   escalade: [ '3.2.0' ],
+96 silly audit   'escape-string-regexp': [ '4.0.0' ],
+96 silly audit   eslint: [ '9.39.2' ],
+96 silly audit   'eslint-config-next': [ '16.0.10' ],
+96 silly audit   globals: [ '16.4.0', '14.0.0' ],
+96 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+96 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+96 silly audit   'eslint-module-utils': [ '2.12.1' ],
+96 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+96 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+96 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+96 silly audit   'eslint-plugin-react-hooks': [ '7.0.1' ],
+96 silly audit   resolve: [ '2.0.0-next.5', '1.22.11' ],
+96 silly audit   'eslint-scope': [ '8.4.0' ],
+96 silly audit   espree: [ '10.4.0' ],
+96 silly audit   esquery: [ '1.6.0' ],
+96 silly audit   esrecurse: [ '4.3.0' ],
+96 silly audit   estraverse: [ '5.3.0' ],
+96 silly audit   esutils: [ '2.0.3' ],
+96 silly audit   'fast-deep-equal': [ '3.1.3' ],
+96 silly audit   'fast-glob': [ '3.3.1' ],
+96 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+96 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+96 silly audit   'fast-levenshtein': [ '2.0.6' ],
+96 silly audit   fastq: [ '1.19.1' ],
+96 silly audit   'file-entry-cache': [ '8.0.0' ],
+96 silly audit   'fill-range': [ '7.1.1' ],
+96 silly audit   'find-up': [ '5.0.0' ],
+96 silly audit   'flat-cache': [ '4.0.1' ],
+96 silly audit   flatted: [ '3.3.3' ],
+96 silly audit   'for-each': [ '0.3.5' ],
+96 silly audit   'function-bind': [ '1.1.2' ],
+96 silly audit   'function.prototype.name': [ '1.1.8' ],
+96 silly audit   'functions-have-names': [ '1.2.3' ],
+96 silly audit   'generator-function': [ '2.0.1' ],
+96 silly audit   gensync: [ '1.0.0-beta.2' ],
+96 silly audit   'get-intrinsic': [ '1.3.0' ],
+96 silly audit   'get-proto': [ '1.0.1' ],
+96 silly audit   'get-symbol-description': [ '1.1.0' ],
+96 silly audit   'get-tsconfig': [ '4.13.0' ],
+96 silly audit   globalthis: [ '1.0.4' ],
+96 silly audit   gopd: [ '1.2.0' ],
+96 silly audit   'graceful-fs': [ '4.2.11' ],
+96 silly audit   'has-bigints': [ '1.1.0' ],
+96 silly audit   'has-flag': [ '4.0.0' ],
+96 silly audit   'has-property-descriptors': [ '1.0.2' ],
+96 silly audit   'has-proto': [ '1.2.0' ],
+96 silly audit   'has-symbols': [ '1.1.0' ],
+96 silly audit   'has-tostringtag': [ '1.0.2' ],
+96 silly audit   hasown: [ '2.0.2' ],
+96 silly audit   'hermes-estree': [ '0.25.1' ],
+96 silly audit   'hermes-parser': [ '0.25.1' ],
+96 silly audit   'import-fresh': [ '3.3.1' ],
+96 silly audit   imurmurhash: [ '0.1.4' ],
+96 silly audit   'internal-slot': [ '1.1.0' ],
+96 silly audit   'is-array-buffer': [ '3.0.5' ],
+96 silly audit   'is-async-function': [ '2.1.1' ],
+96 silly audit   'is-bigint': [ '1.1.0' ],
+96 silly audit   'is-boolean-object': [ '1.2.2' ],
+96 silly audit   'is-bun-module': [ '2.0.0' ],
+96 silly audit   'is-callable': [ '1.2.7' ],
+96 silly audit   'is-core-module': [ '2.16.1' ],
+96 silly audit   'is-data-view': [ '1.0.2' ],
+96 silly audit   'is-date-object': [ '1.1.0' ],
+96 silly audit   'is-extglob': [ '2.1.1' ],
+96 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+96 silly audit   'is-generator-function': [ '1.1.2' ],
+96 silly audit   'is-glob': [ '4.0.3' ],
+96 silly audit   'is-map': [ '2.0.3' ],
+96 silly audit   'is-negative-zero': [ '2.0.3' ],
+96 silly audit   'is-number': [ '7.0.0' ],
+96 silly audit   'is-number-object': [ '1.1.1' ],
+96 silly audit   'is-regex': [ '1.2.1' ],
+96 silly audit   'is-set': [ '2.0.3' ],
+96 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+96 silly audit   'is-string': [ '1.1.1' ],
+96 silly audit   'is-symbol': [ '1.1.1' ],
+96 silly audit   'is-typed-array': [ '1.1.15' ],
+96 silly audit   'is-weakmap': [ '2.0.2' ],
+96 silly audit   'is-weakref': [ '1.1.1' ],
+96 silly audit   'is-weakset': [ '2.0.4' ],
+96 silly audit   isarray: [ '2.0.5' ],
+96 silly audit   isexe: [ '2.0.0' ],
+96 silly audit   'iterator.prototype': [ '1.1.5' ],
+96 silly audit   jiti: [ '2.6.1' ],
+96 silly audit   'js-tokens': [ '4.0.0' ],
+96 silly audit   'js-yaml': [ '4.1.1' ],
+96 silly audit   jsesc: [ '3.1.0' ],
+96 silly audit   'json-buffer': [ '3.0.1' ],
+96 silly audit   'json-schema-traverse': [ '0.4.1' ],
+96 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+96 silly audit   json5: [ '2.2.3', '1.0.2' ],
+96 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+96 silly audit   keyv: [ '4.5.4' ],
+96 silly audit   'language-subtag-registry': [ '0.3.23' ],
+96 silly audit   'language-tags': [ '1.0.9' ],
+96 silly audit   levn: [ '0.4.1' ],
+96 silly audit   lightningcss: [ '1.30.2' ],
+96 silly audit   'lightningcss-android-arm64': [ '1.30.2' ],
+96 silly audit   'lightningcss-darwin-arm64': [ '1.30.2' ],
+96 silly audit   'lightningcss-darwin-x64': [ '1.30.2' ],
+96 silly audit   'lightningcss-freebsd-x64': [ '1.30.2' ],
+96 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.2' ],
+96 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.2' ],
+96 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.2' ],
+96 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.2' ],
+96 silly audit   'lightningcss-linux-x64-musl': [ '1.30.2' ],
+96 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.2' ],
+96 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.2' ],
+96 silly audit   'locate-path': [ '6.0.0' ],
+96 silly audit   'lodash.merge': [ '4.6.2' ],
+96 silly audit   'loose-envify': [ '1.4.0' ],
+96 silly audit   'lru-cache': [ '5.1.1' ],
+96 silly audit   'lucide-react': [ '0.562.0' ],
+96 silly audit   'magic-string': [ '0.30.21' ],
+96 silly audit   'math-intrinsics': [ '1.1.0' ],
+96 silly audit   merge2: [ '1.4.1' ],
+96 silly audit   micromatch: [ '4.0.8' ],
+96 silly audit   minimist: [ '1.2.8' ],
+96 silly audit   ms: [ '2.1.3' ],
+96 silly audit   nanoid: [ '3.3.11' ],
+96 silly audit   'napi-postinstall': [ '0.3.4' ],
+96 silly audit   'natural-compare': [ '1.4.0' ],
+96 silly audit   next: [ '16.0.10' ],
+96 silly audit   'next-themes': [ '0.4.6' ],
+96 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+96 silly audit   'node-releases': [ '2.0.27' ],
+96 silly audit   'object-assign': [ '4.1.1' ],
+96 silly audit   'object-inspect': [ '1.13.4' ],
+96 silly audit   'object-keys': [ '1.1.1' ],
+96 silly audit   'object.assign': [ '4.1.7' ],
+96 silly audit   'object.entries': [ '1.1.9' ],
+96 silly audit   'object.fromentries': [ '2.0.8' ],
+96 silly audit   'object.groupby': [ '1.0.3' ],
+96 silly audit   'object.values': [ '1.2.1' ],
+96 silly audit   optionator: [ '0.9.4' ],
+96 silly audit   'own-keys': [ '1.0.1' ],
+96 silly audit   'p-limit': [ '3.1.0' ],
+96 silly audit   'p-locate': [ '5.0.0' ],
+96 silly audit   'parent-module': [ '1.0.1' ],
+96 silly audit   'path-exists': [ '4.0.0' ],
+96 silly audit   'path-key': [ '3.1.1' ],
+96 silly audit   'path-parse': [ '1.0.7' ],
+96 silly audit   picocolors: [ '1.1.1' ],
+96 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+96 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+96 silly audit   'prelude-ls': [ '1.2.1' ],
+96 silly audit   'prop-types': [ '15.8.1' ],
+96 silly audit   punycode: [ '2.3.1' ],
+96 silly audit   'queue-microtask': [ '1.2.3' ],
+96 silly audit   react: [ '19.2.1' ],
+96 silly audit   'react-dom': [ '19.2.1' ],
+96 silly audit   'react-is': [ '16.13.1' ],
+96 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+96 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+96 silly audit   'resolve-from': [ '4.0.0' ],
+96 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+96 silly audit   reusify: [ '1.1.0' ],
+96 silly audit   'run-parallel': [ '1.2.0' ],
+96 silly audit   'safe-array-concat': [ '1.1.3' ],
+96 silly audit   'safe-push-apply': [ '1.0.0' ],
+96 silly audit   'safe-regex-test': [ '1.1.0' ],
+96 silly audit   scheduler: [ '0.27.0' ],
+96 silly audit   'set-function-length': [ '1.2.2' ],
+96 silly audit   'set-function-name': [ '2.0.2' ],
+96 silly audit   'set-proto': [ '1.0.0' ],
+96 silly audit   sharp: [ '0.34.5' ],
+96 silly audit   'shebang-command': [ '2.0.0' ],
+96 silly audit   'shebang-regex': [ '3.0.0' ],
+96 silly audit   'side-channel': [ '1.1.0' ],
+96 silly audit   'side-channel-list': [ '1.0.0' ],
+96 silly audit   'side-channel-map': [ '1.0.1' ],
+96 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+96 silly audit   'source-map-js': [ '1.2.1' ],
+96 silly audit   'stable-hash': [ '0.0.5' ],
+96 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+96 silly audit   'string.prototype.includes': [ '2.0.1' ],
+96 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+96 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+96 silly audit   'string.prototype.trim': [ '1.2.10' ],
+96 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+96 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+96 silly audit   'strip-bom': [ '3.0.0' ],
+96 silly audit   'strip-json-comments': [ '3.1.1' ],
+96 silly audit   'styled-jsx': [ '5.1.6' ],
+96 silly audit   'supports-color': [ '7.2.0' ],
+96 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+96 silly audit   'tailwind-merge': [ '3.4.0' ],
+96 silly audit   tailwindcss: [ '4.1.18' ],
+96 silly audit   tapable: [ '2.3.0' ],
+96 silly audit   tinyglobby: [ '0.2.15' ],
+96 silly audit   fdir: [ '6.5.0' ],
+96 silly audit   'to-regex-range': [ '5.0.1' ],
+96 silly audit   'ts-api-utils': [ '2.1.0' ],
+96 silly audit   'tsconfig-paths': [ '3.15.0' ],
+96 silly audit   tslib: [ '2.8.1' ],
+96 silly audit   'type-check': [ '0.4.0' ],
+96 silly audit   'typed-array-buffer': [ '1.0.3' ],
+96 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+96 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+96 silly audit   'typed-array-length': [ '1.0.7' ],
+96 silly audit   typescript: [ '5.9.3' ],
+96 silly audit   'typescript-eslint': [ '8.50.0' ],
+96 silly audit   'unbox-primitive': [ '1.1.0' ],
+96 silly audit   'undici-types': [ '6.21.0' ],
+96 silly audit   'unrs-resolver': [ '1.11.1' ],
+96 silly audit   'update-browserslist-db': [ '1.2.3' ],
+96 silly audit   'uri-js': [ '4.4.1' ],
+96 silly audit   which: [ '2.0.2' ],
+96 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+96 silly audit   'which-builtin-type': [ '1.2.1' ],
+96 silly audit   'which-collection': [ '1.0.2' ],
+96 silly audit   'which-typed-array': [ '1.1.19' ],
+96 silly audit   'word-wrap': [ '1.2.5' ],
+96 silly audit   yallist: [ '3.1.1' ],
+96 silly audit   'yocto-queue': [ '0.1.0' ],
+96 silly audit   zod: [ '4.2.1' ],
+96 silly audit   'zod-validation-error': [ '4.0.2' ]
+96 silly audit }
+97 verbose audit error FetchError: request to https://registry.npmjs.org/-/npm/v1/security/advisories/bulk failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+97 verbose audit error     at ClientRequest.<anonymous> (/opt/homebrew/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+97 verbose audit error     at ClientRequest.emit (node:events:508:20)
+97 verbose audit error     at emitErrorEvent (node:_http_client:109:11)
+97 verbose audit error     at _destroy (node:_http_client:993:9)
+97 verbose audit error     at onSocketNT (node:_http_client:1013:5)
+97 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+97 verbose audit error   code: 'ENOTFOUND',
+97 verbose audit error   errno: 'ENOTFOUND',
+97 verbose audit error   syscall: 'getaddrinfo',
+97 verbose audit error   hostname: 'registry.npmjs.org',
+97 verbose audit error   type: 'system'
+97 verbose audit error }
+98 silly audit error undefined
+99 silly audit report null
+100 http cache which@https://registry.npmjs.org/which/-/which-2.0.2.tgz 1ms (cache hit)
+101 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 0ms (cache hit)
+102 http cache update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz 0ms (cache hit)
+103 http cache semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+104 http cache resolve@https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz 0ms (cache hit)
+105 http cache napi-postinstall@https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz 0ms (cache hit)
+106 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 0ms (cache hit)
+107 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz 0ms (cache hit)
+108 http cache jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz 0ms (cache hit)
+109 http cache json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz 0ms (cache hit)
+110 http cache js-yaml@https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz 0ms (cache hit)
+111 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+112 http cache browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz 0ms (cache hit)
+113 http cache @typescript-eslint/visitor-keys@https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.50.0.tgz 0ms (cache hit)
+114 http cache @typescript-eslint/utils@https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.50.0.tgz 0ms (cache hit)
+115 http cache @typescript-eslint/type-utils@https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-8.50.0.tgz 0ms (cache hit)
+116 http cache @typescript-eslint/typescript-estree@https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.50.0.tgz 0ms (cache hit)
+117 http cache @typescript-eslint/types@https://registry.npmjs.org/@typescript-eslint/types/-/types-8.50.0.tgz 0ms (cache hit)
+118 http cache @typescript-eslint/tsconfig-utils@https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.50.0.tgz 0ms (cache hit)
+119 http cache @typescript-eslint/scope-manager@https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.50.0.tgz 0ms (cache hit)
+120 http cache @typescript-eslint/project-service@https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.50.0.tgz 0ms (cache hit)
+121 http cache @typescript-eslint/parser@https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.50.0.tgz 0ms (cache hit)
+122 http cache @typescript-eslint/eslint-plugin@https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.50.0.tgz 0ms (cache hit)
+123 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-20.19.27.tgz 0ms (cache hit)
+124 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.7.tgz 0ms (cache hit)
+125 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.1.18.tgz 0ms (cache hit)
+126 http cache @tailwindcss/oxide-darwin-arm64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-arm64/-/oxide-darwin-arm64-4.1.18.tgz 0ms (cache hit)
+127 http cache @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.1.18.tgz 0ms (cache hit)
+128 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.1.18.tgz 0ms (cache hit)
+129 http cache @next/swc-darwin-arm64@https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-16.0.10.tgz 0ms (cache hit)
+130 http cache @next/env@https://registry.npmjs.org/@next/env/-/env-16.0.10.tgz 0ms (cache hit)
+131 http cache @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.0.0.tgz 0ms (cache hit)
+132 http cache @eslint-community/eslint-utils@https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.0.tgz 0ms (cache hit)
+133 http cache @eslint/js@https://registry.npmjs.org/@eslint/js/-/js-9.39.2.tgz 0ms (cache hit)
+134 http cache @eslint/eslintrc@https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.3.tgz 0ms (cache hit)
+135 http cache @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.7.1.tgz 0ms (cache hit)
+136 http cache @emnapi/core@https://registry.npmjs.org/@emnapi/core/-/core-1.7.1.tgz 0ms (cache hit)
+137 http cache @babel/types@https://registry.npmjs.org/@babel/types/-/types-7.28.5.tgz 0ms (cache hit)
+138 http cache @babel/traverse@https://registry.npmjs.org/@babel/traverse/-/traverse-7.28.5.tgz 0ms (cache hit)
+139 http cache @babel/template@https://registry.npmjs.org/@babel/template/-/template-7.27.2.tgz 0ms (cache hit)
+140 http cache @babel/helpers@https://registry.npmjs.org/@babel/helpers/-/helpers-7.28.4.tgz 0ms (cache hit)
+141 http cache @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.28.5.tgz 0ms (cache hit)
+142 http cache @babel/helper-module-imports@https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz 0ms (cache hit)
+143 http cache @next/eslint-plugin-next@https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-16.0.10.tgz 0ms (cache hit)
+144 http cache @babel/helper-module-transforms@https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.28.3.tgz 0ms (cache hit)
+145 http cache @babel/core@https://registry.npmjs.org/@babel/core/-/core-7.28.5.tgz 0ms (cache hit)
+146 http cache @babel/generator@https://registry.npmjs.org/@babel/generator/-/generator-7.28.5.tgz 0ms (cache hit)
+147 http cache @babel/compat-data@https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.28.5.tgz 0ms (cache hit)
+148 http cache @babel/code-frame@https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.27.1.tgz 0ms (cache hit)
+149 http cache zod@https://registry.npmjs.org/zod/-/zod-4.2.1.tgz 0ms (cache hit)
+150 http cache which-typed-array@https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.19.tgz 0ms (cache hit)
+151 http cache ts-api-utils@https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.1.0.tgz 0ms (cache hit)
+152 http cache typescript-eslint@https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.50.0.tgz 0ms (cache hit)
+153 http cache tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.4.0.tgz 0ms (cache hit)
+154 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.1.18.tgz 0ms (cache hit)
+155 http cache @babel/helper-compilation-targets@https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.27.2.tgz 0ms (cache hit)
+156 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.1.tgz 0ms (cache hit)
+157 http cache next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz 0ms (cache hit)
+158 http cache next@https://registry.npmjs.org/next/-/next-16.0.10.tgz 0ms (cache hit)
+159 http cache minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz 0ms (cache hit)
+160 http cache react@https://registry.npmjs.org/react/-/react-19.2.1.tgz 0ms (cache hit)
+161 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.562.0.tgz 0ms (cache hit)
+162 http cache lightningcss-darwin-arm64@https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.30.2.tgz 0ms (cache hit)
+163 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.30.2.tgz 0ms (cache hit)
+164 http cache get-tsconfig@https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz 0ms (cache hit)
+165 http cache fastq@https://registry.npmjs.org/fastq/-/fastq-1.19.1.tgz 0ms (cache hit)
+166 http cache esquery@https://registry.npmjs.org/esquery/-/esquery-1.6.0.tgz 0ms (cache hit)
+167 http cache eslint@https://registry.npmjs.org/eslint/-/eslint-9.39.2.tgz 0ms (cache hit)
+168 http cache eslint-config-next@https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-16.0.10.tgz 0ms (cache hit)
+169 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.18.4.tgz 0ms (cache hit)
+170 http cache electron-to-chromium@https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.267.tgz 0ms (cache hit)
+171 http cache caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001760.tgz 0ms (cache hit)
+172 http cache baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.9.8.tgz 0ms (cache hit)
+173 http cache axe-core@https://registry.npmjs.org/axe-core/-/axe-core-4.11.0.tgz 0ms (cache hit)
+174 http cache ajv@https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz 0ms (cache hit)
+175 http cache acorn@https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz 0ms (cache hit)
+176 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz 0ms (cache hit)
+177 http cache json5@https://registry.npmjs.org/json5/-/json5-1.0.2.tgz 0ms (cache hit)
+178 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz 0ms (cache hit)
+179 http cache resolve@https://registry.npmjs.org/resolve/-/resolve-2.0.0-next.5.tgz 0ms (cache hit)
+180 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz 0ms (cache hit)
+181 http cache minimatch@https://registry.npmjs.org/minimatch/-/minimatch-9.0.5.tgz 0ms (cache hit)
+182 http cache brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.2.tgz 0ms (cache hit)
+183 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-2.0.2.tgz. Extracting by manifest.
+184 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz. Extracting by manifest.
+185 silly tarball no local data for update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz. Extracting by manifest.
+186 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz. Extracting by manifest.
+187 silly tarball no local data for resolve@https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz. Extracting by manifest.
+188 silly tarball no local data for napi-postinstall@https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz. Extracting by manifest.
+189 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz. Extracting by manifest.
+190 silly tarball no local data for jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz. Extracting by manifest.
+191 silly tarball no local data for jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz. Extracting by manifest.
+192 silly tarball no local data for json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz. Extracting by manifest.
+193 silly tarball no local data for js-yaml@https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz. Extracting by manifest.
+194 silly tarball no local data for loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+195 silly tarball no local data for browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz. Extracting by manifest.
+196 silly tarball no local data for @typescript-eslint/visitor-keys@https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.50.0.tgz. Extracting by manifest.
+197 silly tarball no local data for @typescript-eslint/utils@https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.50.0.tgz. Extracting by manifest.
+198 silly tarball no local data for @typescript-eslint/type-utils@https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-8.50.0.tgz. Extracting by manifest.
+199 silly tarball no local data for @typescript-eslint/typescript-estree@https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.50.0.tgz. Extracting by manifest.
+200 silly tarball no local data for @typescript-eslint/types@https://registry.npmjs.org/@typescript-eslint/types/-/types-8.50.0.tgz. Extracting by manifest.
+201 silly tarball no local data for @typescript-eslint/tsconfig-utils@https://registry.npmjs.org/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.50.0.tgz. Extracting by manifest.
+202 silly tarball no local data for @typescript-eslint/scope-manager@https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.50.0.tgz. Extracting by manifest.
+203 silly tarball no local data for @typescript-eslint/project-service@https://registry.npmjs.org/@typescript-eslint/project-service/-/project-service-8.50.0.tgz. Extracting by manifest.
+204 silly tarball no local data for @typescript-eslint/parser@https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.50.0.tgz. Extracting by manifest.
+205 silly tarball no local data for @typescript-eslint/eslint-plugin@https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.50.0.tgz. Extracting by manifest.
+206 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.19.27.tgz. Extracting by manifest.
+207 silly tarball no local data for @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.7.tgz. Extracting by manifest.
+208 silly tarball no local data for @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.1.18.tgz. Extracting by manifest.
+209 silly tarball no local data for @tailwindcss/oxide-darwin-arm64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-arm64/-/oxide-darwin-arm64-4.1.18.tgz. Extracting by manifest.
+210 silly tarball no local data for @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.1.18.tgz. Extracting by manifest.
+211 silly tarball no local data for @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.1.18.tgz. Extracting by manifest.
+212 silly tarball no local data for @next/swc-darwin-arm64@https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-16.0.10.tgz. Extracting by manifest.
+213 silly tarball no local data for @next/env@https://registry.npmjs.org/@next/env/-/env-16.0.10.tgz. Extracting by manifest.
+214 silly tarball no local data for @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.0.0.tgz. Extracting by manifest.
+215 silly tarball no local data for @eslint-community/eslint-utils@https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.0.tgz. Extracting by manifest.
+216 silly tarball no local data for @eslint/js@https://registry.npmjs.org/@eslint/js/-/js-9.39.2.tgz. Extracting by manifest.
+217 silly tarball no local data for @eslint/eslintrc@https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.3.tgz. Extracting by manifest.
+218 silly tarball no local data for @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.7.1.tgz. Extracting by manifest.
+219 silly tarball no local data for @emnapi/core@https://registry.npmjs.org/@emnapi/core/-/core-1.7.1.tgz. Extracting by manifest.
+220 silly tarball no local data for @babel/types@https://registry.npmjs.org/@babel/types/-/types-7.28.5.tgz. Extracting by manifest.
+221 silly tarball no local data for @babel/traverse@https://registry.npmjs.org/@babel/traverse/-/traverse-7.28.5.tgz. Extracting by manifest.
+222 silly tarball no local data for @babel/template@https://registry.npmjs.org/@babel/template/-/template-7.27.2.tgz. Extracting by manifest.
+223 silly tarball no local data for @babel/helpers@https://registry.npmjs.org/@babel/helpers/-/helpers-7.28.4.tgz. Extracting by manifest.
+224 silly tarball no local data for @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.28.5.tgz. Extracting by manifest.
+225 silly tarball no local data for @babel/helper-module-imports@https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.27.1.tgz. Extracting by manifest.
+226 silly tarball no local data for @next/eslint-plugin-next@https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-16.0.10.tgz. Extracting by manifest.
+227 silly tarball no local data for @babel/helper-module-transforms@https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.28.3.tgz. Extracting by manifest.
+228 silly tarball no local data for @babel/core@https://registry.npmjs.org/@babel/core/-/core-7.28.5.tgz. Extracting by manifest.
+229 silly tarball no local data for @babel/generator@https://registry.npmjs.org/@babel/generator/-/generator-7.28.5.tgz. Extracting by manifest.
+230 silly tarball no local data for @babel/compat-data@https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.28.5.tgz. Extracting by manifest.
+231 silly tarball no local data for @babel/code-frame@https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.27.1.tgz. Extracting by manifest.
+232 silly tarball no local data for zod@https://registry.npmjs.org/zod/-/zod-4.2.1.tgz. Extracting by manifest.
+233 silly tarball no local data for which-typed-array@https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.19.tgz. Extracting by manifest.
+234 silly tarball no local data for ts-api-utils@https://registry.npmjs.org/ts-api-utils/-/ts-api-utils-2.1.0.tgz. Extracting by manifest.
+235 silly tarball no local data for typescript-eslint@https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.50.0.tgz. Extracting by manifest.
+236 silly tarball no local data for tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.4.0.tgz. Extracting by manifest.
+237 silly tarball no local data for tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.1.18.tgz. Extracting by manifest.
+238 silly tarball no local data for @babel/helper-compilation-targets@https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.27.2.tgz. Extracting by manifest.
+239 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.1.tgz. Extracting by manifest.
+240 silly tarball no local data for next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz. Extracting by manifest.
+241 silly tarball no local data for next@https://registry.npmjs.org/next/-/next-16.0.10.tgz. Extracting by manifest.
+242 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz. Extracting by manifest.
+243 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-19.2.1.tgz. Extracting by manifest.
+244 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.562.0.tgz. Extracting by manifest.
+245 silly tarball no local data for lightningcss-darwin-arm64@https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.30.2.tgz. Extracting by manifest.
+246 silly tarball no local data for lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.30.2.tgz. Extracting by manifest.
+247 silly tarball no local data for get-tsconfig@https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.13.0.tgz. Extracting by manifest.
+248 silly tarball no local data for fastq@https://registry.npmjs.org/fastq/-/fastq-1.19.1.tgz. Extracting by manifest.
+249 silly tarball no local data for esquery@https://registry.npmjs.org/esquery/-/esquery-1.6.0.tgz. Extracting by manifest.
+250 silly tarball no local data for eslint@https://registry.npmjs.org/eslint/-/eslint-9.39.2.tgz. Extracting by manifest.
+251 silly tarball no local data for eslint-config-next@https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-16.0.10.tgz. Extracting by manifest.
+252 silly tarball no local data for enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.18.4.tgz. Extracting by manifest.
+253 silly tarball no local data for electron-to-chromium@https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.267.tgz. Extracting by manifest.
+254 silly tarball no local data for caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001760.tgz. Extracting by manifest.
+255 silly tarball no local data for baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.9.8.tgz. Extracting by manifest.
+256 silly tarball no local data for axe-core@https://registry.npmjs.org/axe-core/-/axe-core-4.11.0.tgz. Extracting by manifest.
+257 silly tarball no local data for ajv@https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz. Extracting by manifest.
+258 silly tarball no local data for acorn@https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz. Extracting by manifest.
+259 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz. Extracting by manifest.
+260 silly tarball no local data for json5@https://registry.npmjs.org/json5/-/json5-1.0.2.tgz. Extracting by manifest.
+261 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz. Extracting by manifest.
+262 silly tarball no local data for resolve@https://registry.npmjs.org/resolve/-/resolve-2.0.0-next.5.tgz. Extracting by manifest.
+263 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.7.3.tgz. Extracting by manifest.
+264 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-9.0.5.tgz. Extracting by manifest.
+265 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.2.tgz. Extracting by manifest.
+266 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 1 failed with ENOTFOUND
+267 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz attempt 1 failed with ENOTFOUND
+268 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 1 failed with ENOTFOUND
+269 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 1 failed with ENOTFOUND
+270 http fetch GET https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz attempt 1 failed with ENOTFOUND
+271 http fetch GET https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz attempt 1 failed with ENOTFOUND
+272 http fetch GET https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz attempt 1 failed with ENOTFOUND
+273 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 1 failed with ENOTFOUND
+274 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 1 failed with ENOTFOUND
+275 http fetch GET https://registry.npmjs.org/json5/-/json5-2.2.3.tgz attempt 1 failed with ENOTFOUND
+276 http fetch GET https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz attempt 1 failed with ENOTFOUND
+277 http fetch GET https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz attempt 1 failed with ENOTFOUND
+278 http fetch GET https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz attempt 1 failed with ENOTFOUND
+279 http fetch GET https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.50.0.tgz attempt 1 failed with ENOTFOUND
+280 http fetch GET https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.50.0.tgz attempt 1 failed with ENOTFOUND
+281 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ENOTFOUND
+282 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 2 failed with ENOTFOUND
+283 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz attempt 2 failed with ENOTFOUND
+284 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 2 failed with ENOTFOUND
+285 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 2 failed with ENOTFOUND
+286 http fetch GET https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz attempt 2 failed with ENOTFOUND
+287 http fetch GET https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz attempt 2 failed with ENOTFOUND
+288 http fetch GET https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz attempt 2 failed with ENOTFOUND
+289 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 2 failed with ENOTFOUND
+290 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 2 failed with ENOTFOUND
+291 http fetch GET https://registry.npmjs.org/json5/-/json5-2.2.3.tgz attempt 2 failed with ENOTFOUND
+292 http fetch GET https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz attempt 2 failed with ENOTFOUND
+293 http fetch GET https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz attempt 2 failed with ENOTFOUND
+294 http fetch GET https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz attempt 2 failed with ENOTFOUND
+295 http fetch GET https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.50.0.tgz attempt 2 failed with ENOTFOUND
+296 http fetch GET https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.50.0.tgz attempt 2 failed with ENOTFOUND
+297 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ENOTFOUND
+298 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 3 failed with ENOTFOUND
+299 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz attempt 3 failed with ENOTFOUND
+300 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 3 failed with ENOTFOUND
+301 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 3 failed with ENOTFOUND
+302 http fetch GET https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz attempt 3 failed with ENOTFOUND
+303 http fetch GET https://registry.npmjs.org/napi-postinstall/-/napi-postinstall-0.3.4.tgz attempt 3 failed with ENOTFOUND
+304 http fetch GET https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz attempt 3 failed with ENOTFOUND
+305 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 3 failed with ENOTFOUND
+306 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 3 failed with ENOTFOUND
+307 http fetch GET https://registry.npmjs.org/json5/-/json5-2.2.3.tgz attempt 3 failed with ENOTFOUND
+308 http fetch GET https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz attempt 3 failed with ENOTFOUND
+309 http fetch GET https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz attempt 3 failed with ENOTFOUND
+310 http fetch GET https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz attempt 3 failed with ENOTFOUND
+311 http fetch GET https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-8.50.0.tgz attempt 3 failed with ENOTFOUND
+312 http fetch GET https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.50.0.tgz attempt 3 failed with ENOTFOUND
+313 verbose cwd /Users/leo/MyFolder/myProjects/leo-profolio
+314 verbose os Darwin 24.5.0
+315 verbose node v25.8.0
+316 verbose npm  v11.11.0
+317 error Exit handler never called!
+318 error This is an error with npm itself. Please report this error at:
+319 error   <https://github.com/npm/cli/issues>
+320 verbose exit 1
+321 verbose code 1
+322 error A complete log of this run can be found in: /Users/leo/MyFolder/myProjects/leo-profolio/.npm-cache/_logs/2026-06-20T12_36_59_948Z-debug-0.log

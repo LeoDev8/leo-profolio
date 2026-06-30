@@ -1,11 +1,17 @@
 @layer base {
-    :root, .light {
-    --background: #ffffff; 
-    --foreground: #0a0a0a;
-    --border: #afafaf;
+  :root,
+  .light {
+    --background: #f7f8f6;
+    --foreground: #1b1f1d;
+    --surface: #ffffff;
+    --surface-muted: #eef1ed;
+    --muted: #68736d;
+    --border: #d9ded8;
+    --accent: #4f8f7b;
+    --accent-foreground: #ffffff;
 
-    --logobackground: #bebebe;
-    --buttontext: #afafaf;
-    --buttonhoverbg: rgb(243, 243, 243);
+    --logobackground: #e3e8e2;
+    --buttontext: #65716a;
+    --buttonhoverbg: #edf2ee;
   }
 }

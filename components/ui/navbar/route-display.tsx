@@ -7,11 +7,12 @@ import { usePathname } from "next/navigation";
 const routeDisplayClassname = "mr-2 font-extrabold";
 
 export default function RouteDisplay({ lang, dics }: NavbarProps) {
-  const splitedPathname = usePathname().split(`/${lang}`).filter(Boolean);
+  const pathname = usePathname();
+  const splitedPathname = pathname.split(`/${lang}`).filter(Boolean);
 
   if (splitedPathname.length === 0) {
     return (
-      <Link className={routeDisplayClassname} href={`/`}>
+      <Link className={routeDisplayClassname} href={`/${lang}`}>
         {dics["index"]}
       </Link>
     );
@@ -20,9 +21,9 @@ export default function RouteDisplay({ lang, dics }: NavbarProps) {
     return (
       <Link
         className={`${routeDisplayClassname} capitalize `}
-        href={`/${splitedPathname[0].split("/")[1]}`}
+        href={`/${lang}/${splitedPathname[0].split("/")[1]}`}
       >
-        {dics[routeKey]}
+        {dics[routeKey] || dics.index}
       </Link>
     );
   }

@@ -1,11 +1,16 @@
 @layer base {
   .dark {
-    --background: #09090b;
-    --foreground: #ededed; 
-    --border: #666666; 
+    --background: #0d1110;
+    --foreground: #edf2ee;
+    --surface: #141a18;
+    --surface-muted: #1c2421;
+    --muted: #98a39d;
+    --border: #2b3531;
+    --accent: #7db89c;
+    --accent-foreground: #08100d;
 
-    --logobackground: #666666;
-    --buttontext: rgb(145, 152, 161);
-    --buttonhoverbg: rgb(50, 50, 50);
+    --logobackground: #202a26;
+    --buttontext: #a5b0aa;
+    --buttonhoverbg: #1d2723;
   }
 }

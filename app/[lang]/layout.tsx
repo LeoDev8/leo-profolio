@@ -4,16 +4,19 @@ import { getDictionary } from "@/libs/dictionaries";
 import Navbar from "@/components/layout/navbar";
 import Main from "@/components/layout/main";
 import Footer from "@/components/layout/footer";
-import { LOCALES } from "@/config/locales";
+import { LOCALES, LocaleKey } from "@/config/locales";
+
+const isLocaleKey = (lang: string): lang is LocaleKey => lang in LOCALES;
 
 export default async function Layout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: keyof typeof LOCALES }>;
+  params: Promise<{ lang: string }>;
 }>) {
-  const { lang } = await params;
+  const { lang: rawLang } = await params;
+  const lang = isLocaleKey(rawLang) ? rawLang : "en";
   const fontClass = lang === "zh" ? "font-lang-zh" : "font-lang-en";
   const dics = await getDictionary(lang);
 

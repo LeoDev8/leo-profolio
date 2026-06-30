@@ -7,14 +7,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // Get Current Language From router
-export const getCurrentLang = (pathname: String) => {
+export const getCurrentLang = (pathname: string) => {
   if (!pathname) return null;
   const segments = pathname.split("/");
   return segments[1];
 };
 
 // Handle Language Router Path
-export const changeLangPathname = (pathname: String, newLang: LocaleKey) => {
+export const changeLangPathname = (pathname: string, newLang: LocaleKey) => {
   if (!newLang) return pathname;
   if (!pathname) return `/${newLang}`;
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Leo brush avatar mark</title>
+  <desc id="desc">A hand-drawn monochrome brush mark forming a lowercase leo monogram with a small spark.</desc>
+  <defs>
+    <linearGradient id="paper" x1="210" y1="120" x2="820" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.58" stop-color="#f3f3f1"/>
+      <stop offset="1" stop-color="#dededb"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="260" y1="165" x2="810" y2="855" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#272727"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#ffffff"/>
+
+  <g fill="none" stroke="url(#ink)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M383 151 C353 244 320 360 293 471 C267 581 246 706 296 785 C335 846 422 845 482 786 C532 737 558 673 531 635 C507 601 451 619 430 666 C404 723 447 785 524 811 C632 847 762 805 821 706 C889 592 853 462 744 408 C634 353 513 391 459 491 C441 525 433 557 431 582" stroke-width="76"/>
+    
+    <path d="M826 431 C858 475 874 526 874 580" stroke-width="10" opacity="0.44"/>
+    
+  </g>
+
+  <path fill="#0a0a0a" d="M663 470 C678 535 692 550 757 565 C692 580 678 595 663 660 C648 595 633 580 568 565 C633 550 648 535 663 470z"/>
+  <path fill="#f3f3f1" opacity="0.9" d="M663 523 C670 553 676 559 706 566 C676 573 670 579 663 609 C656 579 650 573 620 566 C650 559 656 553 663 523z"/>
+</svg>

@@ -3,7 +3,9 @@
     "index": "Index",
     "profile": "Profile",
     "works": "Works",
-    "writings": "writings",
+    "writings": "Writings",
+    "photos": "Photos",
+    "flights": "Flights",
     "contact": "Contact"
   },
   "main": {
