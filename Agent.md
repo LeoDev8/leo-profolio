@@ -86,3 +86,11 @@ Context/Decisions:
 - Projects content uses single English fields for v1.
 - The localized Projects page remains a placeholder; it does not consume project table data yet.
 - Write APIs accept either `Authorization: Bearer <PROJECTS_ADMIN_TOKEN>` or `x-admin-token`.
+
+## 2026-07-01 / Glass Avatar Refresh
+Changes Made:
+- Restyled the navbar avatar into a transparent brush mark without an opaque white, black, or glass circular background.
+- Removed the opaque SVG backgrounds, softened light/dark avatar colors, and simplified the spark detail for small sizes.
+
+Context/Decisions:
+- Kept the existing logo route behavior, size footprint, and light/dark image switching.

@@ -7,23 +7,23 @@ export default function Logo({ lang }: { lang: string }) {
       <Link
         href={`/${lang}`}
         aria-label="Leo Profolio home"
-        className="relative flex w-full h-full items-center justify-center overflow-hidden rounded-full"
+        className="relative flex h-full w-full items-center justify-center transition-opacity duration-motion hover:opacity-80"
       >
         <Image
           src="/avatar/leo-avatar-brush.svg"
           alt="Leo Profolio"
-          width={36}
-          height={36}
+          width={32}
+          height={32}
           priority
-          className="block w-9 h-9 dark:hidden"
+          className="block h-8 w-8 dark:hidden"
         />
         <Image
           src="/avatar/leo-avatar-brush-dark.svg"
           alt="Leo Profolio"
-          width={36}
-          height={36}
+          width={32}
+          height={32}
           priority
-          className="hidden w-9 h-9 dark:block"
+          className="hidden h-8 w-8 dark:block"
         />
       </Link>
     </div>
