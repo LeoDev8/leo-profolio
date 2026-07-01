@@ -9,6 +9,14 @@ const defaultLocale = "en";
 export default function handleRedirect(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  const legacyWorksMatch = pathname.match(/^\/([^/]+)\/works(\/.*)?$/);
+  if (legacyWorksMatch && locales.includes(legacyWorksMatch[1])) {
+    request.nextUrl.pathname = `/${legacyWorksMatch[1]}/projects${
+      legacyWorksMatch[2] ?? ""
+    }`;
+    return NextResponse.redirect(request.nextUrl);
+  }
+
   // 2. Check whether the pathname has the supported language or not
   // Examples: '/en/about' or '/zh' returns true， '/about' returns false
   const pathnameHasLocale = locales.some(

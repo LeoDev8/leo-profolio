@@ -68,8 +68,8 @@ export const homeCopy = {
       {
         title: "项目作品",
         description: "小型前端实验、全栈应用、组件练习和可以复盘的构建过程。",
-        href: "/works",
-        label: "Works",
+        href: "/projects",
+        label: "Projects",
         icon: Code2,
       },
       {
@@ -131,10 +131,10 @@ export const homeCopy = {
         icon: BookOpenText,
       },
       {
-        title: "Works",
+        title: "Projects",
         description: "Frontend experiments, full-stack apps, component practice, and build notes.",
-        href: "/works",
-        label: "Works",
+        href: "/projects",
+        label: "Projects",
         icon: Code2,
       },
       {

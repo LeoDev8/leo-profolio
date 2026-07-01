@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "leo-profolio",
+    "title": "Leo Profolio",
+    "summary": "A personal portfolio site for writings, projects, photography, and future flight logs.",
+    "description": "A localized Next.js portfolio built as a long-term home for project notes, visual work, and personal records.",
+    "coverSrc": null,
+    "coverAlt": null,
+    "status": "published",
+    "projectType": "portfolio",
+    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "MySQL"],
+    "repoUrl": null,
+    "demoUrl": null,
+    "startedAt": "2026-07-01",
+    "completedAt": null,
+    "featured": true,
+    "sortOrder": 1
+  }
+]

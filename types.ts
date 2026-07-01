@@ -6,7 +6,7 @@ export interface NavButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEle
 export type NavDictionary = {
   index: string;
   profile: string;
-  works: string;
+  projects: string;
   writings: string;
   photos: string;
   flights: string;

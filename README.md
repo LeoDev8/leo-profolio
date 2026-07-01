@@ -12,7 +12,7 @@ The site is still under active development. The home page, localized routing, th
 - Light and dark theme support with `next-themes`
 - Responsive navigation with mobile sidebar, language switch, theme switch, and search entry point
 - Local font loading for English and Chinese typography
-- Content sections for writings, works, photos, flights, profile, and contact
+- Content sections for writings, projects, photos, flights, profile, and contact
 
 ## Tech Stack
 
@@ -70,15 +70,16 @@ Runs ESLint.
 npm run db:setup
 ```
 
-Creates the `leoprofolio` MySQL database, runs migrations, and seeds the initial photography records.
+Creates the `leoprofolio` MySQL database, runs migrations, and seeds the initial photography and project records.
 
 ```bash
 npm run db:create
 npm run db:migrate
 npm run db:seed:photos
+npm run db:seed:projects
 ```
 
-Run the database steps individually when you only need to create the database, update the schema, or sync the photography seed data.
+Run the database steps individually when you only need to create the database, update the schema, or sync seed data.
 
 ## Database
 
@@ -93,6 +94,7 @@ MYSQL_DATABASE=leoprofolio
 MYSQL_USER=root
 MYSQL_PASSWORD=
 DATABASE_FALLBACK_TO_LOCAL=true
+PROJECTS_ADMIN_TOKEN=change-me
 ```
 
 On a server, set the same variables in your hosting panel or deployment environment. If your provider gives you one full URL, use `DATABASE_URL` instead:
@@ -112,6 +114,8 @@ npm run start
 
 Photography records live in the `photo_works` table. The seed script uses `slug` as the stable key, so editing `db/seed/photos.json` and rerunning `npm run db:seed:photos` updates existing rows without duplicating them.
 
+Project records live in the `projects` table. The seed script uses `slug` as the stable key, so editing `db/seed/projects.json` and rerunning `npm run db:seed:projects` updates existing rows without duplicating them. Project write APIs require `PROJECTS_ADMIN_TOKEN`; public project reads do not.
+
 ## Project Structure
 
 ```text
@@ -119,7 +123,7 @@ app/
   [lang]/
     page.tsx          Localized home page
     writings/         Writing page route
-    works/            Works page route
+    projects/         Projects page route
     photos/           Photography page route
     flights/          DCS flight log page route
     profile/          Profile page route
@@ -158,7 +162,7 @@ Locale dictionaries live in `dictionaries/`. Each localized page is served under
 
 - `/en`
 - `/zh/photos`
-- `/hk/works`
+- `/hk/projects`
 - `/jp/flights`
 
 The middleware redirects unprefixed paths to the default locale, so `/photos` becomes `/en/photos`.

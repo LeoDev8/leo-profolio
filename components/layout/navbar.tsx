@@ -100,7 +100,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
   const links: NavLink[] = [
     { name: dics.index, href: "/" },
     { name: dics.writings, href: "/writings" },
-    { name: dics.works, href: "/works" },
+    { name: dics.projects, href: "/projects" },
     { name: dics.photos, href: "/photos" },
     { name: dics.flights, href: "/flights" },
     { name: dics.profile, href: "/profile" },
@@ -108,7 +108,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
   ];
 
   const tabletLinks = links.filter((link) =>
-    ["/", "/writings", "/works", "/photos"].includes(link.href)
+    ["/", "/writings", "/projects", "/photos"].includes(link.href)
   );
 
   return (

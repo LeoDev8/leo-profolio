@@ -8,7 +8,8 @@
     "db:create": "node --env-file=.env scripts/db/create-database.mjs",
     "db:migrate": "node --env-file=.env scripts/db/migrate.mjs",
     "db:seed:photos": "node --env-file=.env scripts/db/seed-photos.mjs",
-    "db:setup": "npm run --env-file=.env db:create && npm run db:migrate && npm run db:seed:photos",
+    "db:seed:projects": "node --env-file=.env scripts/db/seed-projects.mjs",
+    "db:setup": "npm run --env-file=.env db:create && npm run db:migrate && npm run db:seed:photos && npm run db:seed:projects",
     "db:test": "node --env-file=.env scripts/db/test_mysql_connection.mjs",
     "start": "next start",
     "lint": "eslint"
