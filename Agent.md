@@ -94,3 +94,15 @@ Changes Made:
 
 Context/Decisions:
 - Kept the existing logo route behavior, size footprint, and light/dark image switching.
+
+## 2026-07-02 / Ice Blue Glass Theme
+Changes Made:
+- Shifted the light and dark theme tokens from green-tinted glass to an ice blue/glacier blue palette.
+- Updated global background glow layers and glass panel highlights to make the glass effect more visible, especially in light mode.
+- Kept the existing glass component API and layout components unchanged so navbar, footer, sidebar, and panels inherit the new theme automatically.
+
+Context/Decisions:
+- Ice blue was chosen because it best communicates transparency, cold reflections, and glass-like refraction without feeling like a saturated tech-blue theme.
+- Light mode now uses a soft blue-tinted background instead of a near-white page background.
+- `npm run lint` passed after the theme changes.
+- Local dev preview could not be started in the current sandbox because port listening was denied.

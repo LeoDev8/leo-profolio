@@ -1,23 +1,23 @@
 @layer base {
   .dark {
-    --background: #0d1110;
-    --foreground: #edf2ee;
-    --surface: #141a18;
-    --surface-muted: #1c2421;
-    --muted: #98a39d;
-    --border: #2b3531;
-    --accent: #7db89c;
-    --accent-foreground: #08100d;
-    --glass: rgb(20 26 24 / 0.68);
-    --glass-strong: rgb(28 36 33 / 0.78);
-    --glass-border: rgb(125 184 156 / 0.2);
-    --glass-highlight: rgb(255 255 255 / 0.08);
-    --shadow-glass: 0 18px 60px rgb(0 0 0 / 0.32);
+    --background: #08111d;
+    --foreground: #eef7ff;
+    --surface: #101c2b;
+    --surface-muted: #19283a;
+    --muted: #9badbd;
+    --border: #26394d;
+    --accent: #8ecff3;
+    --accent-foreground: #05111d;
+    --glass: rgb(12 27 43 / 0.66);
+    --glass-strong: rgb(20 39 58 / 0.8);
+    --glass-border: rgb(142 207 243 / 0.28);
+    --glass-highlight: rgb(232 248 255 / 0.13);
+    --shadow-glass: 0 20px 64px rgb(0 0 0 / 0.36);
     --blur-glass: 18px;
     --motion-duration: 260ms;
 
-    --logobackground: #202a26;
-    --buttontext: #a5b0aa;
-    --buttonhoverbg: #1d2723;
+    --logobackground: #17283a;
+    --buttontext: #aabccd;
+    --buttonhoverbg: #1b3146;
   }
 }

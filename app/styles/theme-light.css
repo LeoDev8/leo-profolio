@@ -1,24 +1,24 @@
 @layer base {
   :root,
   .light {
-    --background: #f7f8f6;
-    --foreground: #1b1f1d;
+    --background: #edf7fc;
+    --foreground: #142231;
     --surface: #ffffff;
-    --surface-muted: #eef1ed;
-    --muted: #68736d;
-    --border: #d9ded8;
-    --accent: #4f8f7b;
+    --surface-muted: #dceff8;
+    --muted: #61778a;
+    --border: #c7dde9;
+    --accent: #438fbd;
     --accent-foreground: #ffffff;
-    --glass: rgb(255 255 255 / 0.62);
+    --glass: rgb(246 252 255 / 0.56);
     --glass-strong: rgb(255 255 255 / 0.78);
-    --glass-border: rgb(79 143 123 / 0.22);
-    --glass-highlight: rgb(255 255 255 / 0.62);
-    --shadow-glass: 0 18px 60px rgb(36 61 52 / 0.12);
+    --glass-border: rgb(67 143 189 / 0.34);
+    --glass-highlight: rgb(255 255 255 / 0.84);
+    --shadow-glass: 0 20px 64px rgb(52 110 147 / 0.2);
     --blur-glass: 18px;
     --motion-duration: 260ms;
 
-    --logobackground: #e3e8e2;
-    --buttontext: #65716a;
-    --buttonhoverbg: #edf2ee;
+    --logobackground: #d9eef8;
+    --buttontext: #61778a;
+    --buttonhoverbg: #e2f2fa;
   }
 }
