@@ -106,3 +106,15 @@ Context/Decisions:
 - Light mode now uses a soft blue-tinted background instead of a near-white page background.
 - `npm run lint` passed after the theme changes.
 - Local dev preview could not be started in the current sandbox because port listening was denied.
+
+## 2026-07-02 / Theme Wave Transition
+Changes Made:
+- Added a View Transition based wave reveal when the dark/light navbar button is clicked.
+- The wave origin is calculated from the clicked theme button and expands across the viewport until the new theme is fully visible.
+- Added a normal instant theme-switch fallback for browsers without View Transition support and for reduced-motion users.
+
+Context/Decisions:
+- The implementation lives in `components/ui/navbar/darkmode-switch.tsx` and `app/globals.css`, so all desktop, tablet, and mobile theme buttons share the same behavior.
+- The reveal animation now uses a simple `ease-in-out` View Transition from zero radius to full viewport coverage, avoiding intermediate pauses and end-of-animation bounce.
+- `npm run lint` passed after the animation change.
+- `npm run build` could not complete in the current sandbox because Turbopack attempted to bind an internal port and the environment returned `Operation not permitted`.

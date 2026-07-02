@@ -23,6 +23,22 @@
     color: var(--foreground);
   }
 
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+  ::view-transition-old(root) {
+    z-index: 0;
+  }
+
+  ::view-transition-new(root) {
+    z-index: 1;
+    animation: theme-wave-reveal 760ms ease-in-out both;
+    clip-path: circle(0 at var(--theme-wave-x, 100%) var(--theme-wave-y, 0));
+  }
+
   .font-lang-en {
     font-family: var(--font-times);
   }
@@ -96,6 +112,19 @@
     }
   }
 
+  @keyframes theme-wave-reveal {
+    from {
+      clip-path: circle(0 at var(--theme-wave-x, 100%) var(--theme-wave-y, 0));
+    }
+
+    to {
+      clip-path: circle(
+        calc(var(--theme-wave-radius, 150vmax) + 6rem) at
+          var(--theme-wave-x, 100%) var(--theme-wave-y, 0)
+      );
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .page-enter,
     .glass-panel-hover,
@@ -103,6 +132,11 @@
       animation: none;
       transform: none;
       transition: none;
+    }
+
+    ::view-transition-new(root) {
+      animation: none;
+      clip-path: none;
     }
   }
 }
