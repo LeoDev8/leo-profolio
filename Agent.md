@@ -89,7 +89,7 @@ Context/Decisions:
 
 ## 2026-07-01 / Glass Avatar Refresh
 Changes Made:
-- Restyled the navbar avatar into a transparent brush mark without an opaque white, black, or glass circular background.
+- Restyled the navbar avatar into a transparent brush mark on a soft glass circular background.
 - Removed the opaque SVG backgrounds, softened light/dark avatar colors, and simplified the spark detail for small sizes.
 
 Context/Decisions:

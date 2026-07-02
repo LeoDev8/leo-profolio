@@ -7,7 +7,7 @@ export default function Logo({ lang }: { lang: string }) {
       <Link
         href={`/${lang}`}
         aria-label="Leo Profolio home"
-        className="relative flex h-full w-full items-center justify-center transition-opacity duration-motion hover:opacity-80"
+        className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-glass-border bg-glass shadow-glass-inner backdrop-blur-sm transition-colors duration-motion hover:bg-glass-strong"
       >
         <Image
           src="/avatar/leo-avatar-brush.svg"
