@@ -6,8 +6,8 @@
     "date": "2026",
     "orientation": "landscape",
     "featured": true,
-    "src": null,
-    "alt": "A finished color-graded city photograph after rain.",
+    "src": "/photos/works/after-rain.webp",
+    "alt": "AI-generated street documentary style photograph of a rain-wet city street with blue reflections and warm lights.",
     "exposure": {
       "shutter": "1/250s",
       "aperture": "f/4",
@@ -22,8 +22,8 @@
     "date": "2026",
     "orientation": "portrait",
     "featured": false,
-    "src": null,
-    "alt": "A vertical travel photograph with quiet light.",
+    "src": "/photos/works/quiet-platform.webp",
+    "alt": "AI-generated street documentary style photograph of a quiet blue-hour transit platform with an anonymous distant figure.",
     "exposure": {
       "shutter": "1/125s",
       "aperture": "f/2.8",
@@ -38,8 +38,8 @@
     "date": "2026",
     "orientation": "square",
     "featured": false,
-    "src": null,
-    "alt": "A square daily-life photograph shaped by window light.",
+    "src": "/photos/works/late-window.webp",
+    "alt": "AI-generated street documentary style photograph of a rain-speckled window with warm interior light and evening reflections.",
     "exposure": {
       "shutter": "1/80s",
       "aperture": "f/2",
@@ -54,13 +54,77 @@
     "date": "2026",
     "orientation": "landscape",
     "featured": false,
-    "src": null,
-    "alt": "A street photograph with crossing light and shadow.",
+    "src": "/photos/works/crossing-light.webp",
+    "alt": "AI-generated street documentary style photograph of crosswalk stripes and long city shadows in late afternoon light.",
     "exposure": {
       "shutter": "1/500s",
       "aperture": "f/5.6",
       "iso": "160",
       "focalLength": "28mm"
+    }
+  },
+  {
+    "slug": "neon-crosswalk",
+    "title": "Neon Crosswalk",
+    "location": "Night Street",
+    "date": "2026",
+    "orientation": "portrait",
+    "featured": false,
+    "src": "/photos/works/neon-crosswalk.webp",
+    "alt": "AI-generated street documentary style photograph of umbrellas and neon reflections on a rainy night crosswalk.",
+    "exposure": {
+      "shutter": "1/160s",
+      "aperture": "f/2.8",
+      "iso": "1000",
+      "focalLength": "35mm"
+    }
+  },
+  {
+    "slug": "morning-market",
+    "title": "Morning Market",
+    "location": "Old District",
+    "date": "2026",
+    "orientation": "landscape",
+    "featured": false,
+    "src": "/photos/works/morning-market.webp",
+    "alt": "AI-generated street documentary style photograph of an early morning market street with wet pavement and warm lamps.",
+    "exposure": {
+      "shutter": "1/200s",
+      "aperture": "f/3.5",
+      "iso": "320",
+      "focalLength": "35mm"
+    }
+  },
+  {
+    "slug": "underpass-blue",
+    "title": "Underpass Blue",
+    "location": "Underpass",
+    "date": "2026",
+    "orientation": "square",
+    "featured": false,
+    "src": "/photos/works/underpass-blue.webp",
+    "alt": "AI-generated street documentary style photograph of a blue-lit pedestrian underpass with puddles and a distant anonymous figure.",
+    "exposure": {
+      "shutter": "1/100s",
+      "aperture": "f/4",
+      "iso": "640",
+      "focalLength": "28mm"
+    }
+  },
+  {
+    "slug": "last-train",
+    "title": "Last Train",
+    "location": "Late Transit",
+    "date": "2026",
+    "orientation": "landscape",
+    "featured": false,
+    "src": "/photos/works/last-train.webp",
+    "alt": "AI-generated street documentary style photograph of a quiet late-night train interior with rain and city reflections.",
+    "exposure": {
+      "shutter": "1/125s",
+      "aperture": "f/2.8",
+      "iso": "1250",
+      "focalLength": "50mm"
     }
   }
 ]

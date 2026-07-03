@@ -118,3 +118,30 @@ Context/Decisions:
 - The reveal animation now uses a simple `ease-in-out` View Transition from zero radius to full viewport coverage, avoiding intermediate pauses and end-of-animation bounce.
 - `npm run lint` passed after the animation change.
 - `npm run build` could not complete in the current sandbox because Turbopack attempted to bind an internal port and the environment returned `Operation not permitted`.
+
+## 2026-07-02 / AI Photo Gallery Seed
+Changes Made:
+- Generated 8 AI street-documentary style photography placeholders for the Photos page.
+- Stored source PNGs under `assets/photos/originals/gpt-image2/` and public WebP display exports under `public/photos/works/`.
+- Expanded `db/seed/photos.json` from 4 placeholder records to 8 records with real `src` values, alt text, orientations, and exposure metadata.
+
+Context/Decisions:
+- Original generated images are intentionally outside `public/`; the database and page only reference optimized WebP display files.
+- The `photo_works` schema was not changed; `src` continues to store the public display image path.
+- Alt text identifies the images as AI-generated so the seed content is not presented as real photography.
+- `npm run lint` passed after the gallery seed update.
+- `npm run db:seed:photos` could not connect to local MySQL in the current sandbox because `127.0.0.1:3306` returned `EPERM`.
+
+## 2026-07-03 / Photos Masonry Display
+Changes Made:
+- Reworked the localized Photos page into a simple photography wall with location filters and a CSS columns masonry layout.
+- Added a client-side gallery component that keeps photos in their natural image proportions and shows each frame as a clean white print-style card.
+- Simplified photo page copy and changed metadata display to direct values like `35mm f/4 1/250s ISO200` without technical parameter labels.
+- Refined the photo cards to use the site's glass/theme colors instead of white print styling, removed visible per-photo titles, and moved exposure data into a subtle hover/mobile overlay.
+
+Context/Decisions:
+- Preserved the existing `getPhotoWorks()` MySQL/local fallback data flow and did not change the `photo_works` schema.
+- Filters are derived from each photo's existing `location` field with a localized all-photos option.
+- Exposure metadata is useful as optional supporting context, but should not dominate the gallery; titles remain data fields but are no longer shown on the photo cards.
+- `npm run lint` passed after the display rewrite.
+- `npm run build` still fails in the current sandbox because Turbopack attempts to bind an internal port and receives `Operation not permitted`.
