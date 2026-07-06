@@ -49,7 +49,7 @@ Current state:
 - Theme switching is wired with dark as the default theme.
 - Home page uses reusable surface components and localized content.
 - Pages exist for writings, projects, photos, flights, profile, and contact.
-- Photography route renders a featured photo and gallery from MySQL or local fallback data.
+- Photography route renders a featured photo, masonry gallery, and routed fullscreen photo viewer from MySQL or local fallback data.
 - Database scripts support creating the database, running ordered migrations, seeding photo/project records, and testing the connection.
 
 Next likely work:
@@ -145,3 +145,46 @@ Context/Decisions:
 - Exposure metadata is useful as optional supporting context, but should not dominate the gallery; titles remain data fields but are no longer shown on the photo cards.
 - `npm run lint` passed after the display rewrite.
 - `npm run build` still fails in the current sandbox because Turbopack attempts to bind an internal port and receives `Operation not permitted`.
+
+## 2026-07-06 / Photos Lightbox Viewer
+Changes Made:
+- Added a fullscreen glass/ice-blue lightbox to the Photos masonry gallery without changing the existing columns layout or photo data flow.
+- Photo cards now open an accessible viewer with close, previous, and next controls, plus keyboard navigation for Escape and arrow keys.
+- Added mobile-friendly swipe navigation and compact mobile previous/next controls.
+- Kept the exposure metadata treatment concise in both the card overlay and viewer, with subdued title/location/date context below the image.
+
+Context/Decisions:
+- The implementation stays inside `components/photos/photos-gallery.tsx` and uses React state/effects plus existing `lucide-react` icons.
+- Missing-image photo records remain navigable in the lightbox and show the existing fallback message.
+- `npm run lint` and `npx tsc --noEmit` passed after the lightbox upgrade.
+
+## 2026-07-06 / Photos Hover And Dark Viewer Refinement
+Changes Made:
+- Tuned the Photos gallery hover state toward an Unsplash-like interaction with a zoom cursor, subtle dark image mask, and in-image photo metadata.
+- Darkened the fullscreen viewer backdrop so the page recedes while the selected photo remains clear, centered, and undimmed.
+- Restyled fullscreen previous/next controls as side-positioned dark glass buttons with blue accent hover states.
+
+Context/Decisions:
+- Preserved the masonry/photo wall layout, existing concise exposure metadata format, keyboard navigation, and mobile swipe behavior.
+- `npm run lint` and `npx tsc --noEmit` passed after the refinement.
+
+## 2026-07-06 / Routed Photos Viewer
+Changes Made:
+- Changed Photos gallery clicks from local lightbox state to locale-aware routes like `/:lang/photos/:photoId`.
+- Added deterministic encoded photo ids derived from each photo slug, using code-like public ids without changing the database schema.
+- Added a routed fullscreen dark viewer page with centered clear photo display, close link back to the gallery, and wraparound previous/next photo links.
+
+Context/Decisions:
+- The existing photo `slug` remains the source of truth; encoded ids are obfuscation rather than secure encryption.
+- The masonry gallery hover mask and concise exposure metadata treatment were preserved.
+- `npm run lint` and `npx tsc --noEmit` passed after the routed viewer change.
+
+## 2026-07-06 / Routed Viewer Glass Mask Fixes
+Changes Made:
+- Added an explicit Back to photos action beside the close button on routed photo viewer pages.
+- Reworked the routed viewer backdrop from near-black to a translucent glass/water mask so the site remains visible behind the photo.
+- Adjusted main content stacking so the fullscreen routed viewer can cover the entire website, including the fixed navbar.
+
+Context/Decisions:
+- Kept the selected photo clear, centered, and undimmed while softening only the surrounding interface.
+- `npm run lint` and `npx tsc --noEmit` passed after the routed viewer fixes.

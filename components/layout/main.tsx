@@ -11,7 +11,7 @@ export default function Main({
   return (
     <main className="relative min-h-screen overflow-hidden bg-background/80 text-foreground">
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.08),transparent)]" />
-      <div className="relative z-10">{children}</div>
+      <div className="relative">{children}</div>
     </main>
   );
 }

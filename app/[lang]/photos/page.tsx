@@ -24,6 +24,7 @@ export default async function Page({ params }: PhotosPageProps) {
         </div>
 
         <PhotosGallery
+          lang={lang}
           photos={photos}
           allFilterLabel={pageCopy.allFilterLabel}
           missingImage={pageCopy.missingImage}
