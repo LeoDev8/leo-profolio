@@ -1,15 +1,15 @@
 import { notFound } from "next/navigation";
 
-import { fallbackPhotoCopy, photoCopy } from "@/content/photos";
 import PhotoViewer from "@/components/photos/photo-viewer";
+import { fallbackPhotoCopy, photoCopy } from "@/content/photos";
 import { decodePhotoId } from "@/libs/photo-id";
 import { getPhotoWorks } from "@/libs/photos";
 
-type PhotoDetailPageProps = {
+type PhotoModalPageProps = {
   params: Promise<{ lang: string; photoId: string }>;
 };
 
-export default async function Page({ params }: PhotoDetailPageProps) {
+export default async function Page({ params }: PhotoModalPageProps) {
   const { lang, photoId } = await params;
   const slug = decodePhotoId(photoId);
 

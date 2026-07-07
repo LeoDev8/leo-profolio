@@ -10,9 +10,11 @@ const isLocaleKey = (lang: string): lang is LocaleKey => lang in LOCALES;
 
 export default async function Layout({
   children,
+  modal,
   params,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
   params: Promise<{ lang: string }>;
 }>) {
   const { lang: rawLang } = await params;
@@ -28,6 +30,7 @@ export default async function Layout({
       <Main lang={lang} dics={dics.main}>
         {children}
       </Main>
+      {modal}
       <Footer lang={lang} dics={dics.footer} />
     </div>
   );

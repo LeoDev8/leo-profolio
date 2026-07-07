@@ -100,6 +100,7 @@ function PhotoPrint({
     <figure className="group mb-5 inline-block w-full break-inside-avoid overflow-hidden rounded-lg border border-glass-border bg-glass p-1.5 shadow-glass transition duration-300 hover:-translate-y-1 hover:border-accent/45 hover:bg-glass-strong">
       <Link
         href={href}
+        scroll={false}
         aria-label={`Open ${photo.title}`}
         className="block w-full cursor-zoom-in rounded-md text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       >

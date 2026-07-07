@@ -49,7 +49,7 @@ Current state:
 - Theme switching is wired with dark as the default theme.
 - Home page uses reusable surface components and localized content.
 - Pages exist for writings, projects, photos, flights, profile, and contact.
-- Photography route renders a featured photo, masonry gallery, and routed fullscreen photo viewer from MySQL or local fallback data.
+- Photography route renders a featured photo, masonry gallery, and routed fullscreen/modal photo viewer from MySQL or local fallback data.
 - Database scripts support creating the database, running ordered migrations, seeding photo/project records, and testing the connection.
 
 Next likely work:
@@ -188,3 +188,15 @@ Changes Made:
 Context/Decisions:
 - Kept the selected photo clear, centered, and undimmed while softening only the surrounding interface.
 - `npm run lint` and `npx tsc --noEmit` passed after the routed viewer fixes.
+
+## 2026-07-07 / Photos Routed Modal Viewer
+Changes Made:
+- Added a Next.js parallel/intercepted route so photo links from the Photos page open as a translucent modal over the existing gallery while keeping the `/:lang/photos/:photoId` URL.
+- Extracted the routed photo viewer UI into a shared component used by both intercepted modal navigation and direct photo detail visits.
+- Removed the separate Back to photos button from the viewer header, leaving the close `X` as the only return action.
+- Added lightweight viewer and image fade-in animations plus `scroll={false}` on photo viewer links to preserve the underlying gallery position where possible.
+
+Context/Decisions:
+- Direct visits to `/:lang/photos/:photoId` still render the standalone fullscreen viewer, preserving shareable photo URLs.
+- The photography data flow, encoded photo ids, MySQL fallback behavior, and gallery layout were not changed.
+- `npm run lint` and `npx tsc --noEmit` passed after the modal route update.
