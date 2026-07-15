@@ -1,3 +1,5 @@
+import "react";
+
 export default function Page() {
-  return <p>projects page</p>;
+    return "Projects"
 }
