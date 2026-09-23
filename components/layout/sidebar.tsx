@@ -14,7 +14,6 @@ export default function Sidebar({
   isOpen,
   onClose,
   lang,
-  dics,
   links,
 }: SidebarProps) {
   const pathname = usePathname();
@@ -42,12 +41,7 @@ export default function Sidebar({
         }`}
       >
         <div className="flex h-16 items-center justify-between border-b border-border px-4">
-          <div className="flex items-center gap-2">
-            <Logo lang={lang} />
-            <span className="text-sm font-semibold text-foreground">
-              {dics.index}
-            </span>
-          </div>
+          <Logo lang={lang} />
           <NavButton aria-label="Close navigation" onClick={onClose} Icon={<X />} />
         </div>
 

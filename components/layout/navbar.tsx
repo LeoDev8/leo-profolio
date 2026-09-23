@@ -8,7 +8,6 @@ import { useCallback, useState } from "react";
 import { NavbarProps } from "@/types";
 import Logo from "../ui/logo";
 import NavButton from "../ui/navbar/nav-button";
-import RouteDisplay from "../ui/navbar/route-display";
 import DarkmodeSwitch from "../ui/navbar/darkmode-switch";
 import LangSwitch from "../ui/navbar/lang-switch";
 import SideBar from "@/components/layout/sidebar";
@@ -98,37 +97,30 @@ export default function Navbar({ lang, dics }: NavbarProps) {
   const closeSidebar = useCallback(() => setSidebarOpen(false), []);
 
   const links: NavLink[] = [
-    { name: dics.index, href: "/" },
     { name: dics.writings, href: "/writings" },
     { name: dics.projects, href: "/projects" },
     { name: dics.photos, href: "/photos" },
-    { name: dics.flights, href: "/flights" },
   ];
 
-  const tabletLinks = links.filter((link) =>
-    ["/", "/writings", "/projects", "/photos"].includes(link.href)
-  );
+  const tabletLinks = links;
 
   return (
     <header>
       <nav className="fixed left-0 right-0 top-0 z-50 border-b border-glass-border bg-glass/80 shadow-glass-inner backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
-          <div className="flex w-full items-center justify-between gap-4">
-            <div className="flex min-w-0 items-center gap-2">
-              <div className="flex items-center md:hidden">
-                <NavButton
-                  aria-label="Open navigation"
-                  onClick={() => setSidebarOpen(true)}
-                  Icon={<Menu />}
-                />
-              </div>
-              <Logo lang={lang} />
-              <div className="min-w-0 md:hidden">
-                <RouteDisplay lang={lang} dics={dics} />
-              </div>
+        <div className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-6 lg:px-8">
+          <div className="flex min-w-0 items-center gap-2">
+            <div className="flex items-center md:hidden">
+              <NavButton
+                aria-label="Open navigation"
+                onClick={() => setSidebarOpen(true)}
+                Icon={<Menu />}
+              />
             </div>
+            <Logo lang={lang} />
+          </div>
 
-            <div className="hidden min-w-0 flex-1 items-center gap-6 md:flex lg:hidden">
+          <div className="hidden min-w-0 items-center justify-center md:flex">
+            <div className="lg:hidden">
               <NavLinks
                 links={tabletLinks}
                 lang={lang}
@@ -136,8 +128,7 @@ export default function Navbar({ lang, dics }: NavbarProps) {
                 className="gap-5"
               />
             </div>
-
-            <div className="hidden min-w-0 flex-1 items-center gap-8 lg:flex">
+            <div className="hidden lg:block">
               <NavLinks
                 links={links}
                 lang={lang}
@@ -145,43 +136,44 @@ export default function Navbar({ lang, dics }: NavbarProps) {
                 className="gap-6"
               />
             </div>
+          </div>
 
-            <div className="flex shrink-0 items-center gap-2">
-              <div className="hidden lg:block">
-                <SearchField />
-              </div>
+          <div className="flex shrink-0 items-center justify-end gap-2">
+            <div className="hidden lg:block">
+              <SearchField />
+            </div>
 
-              <div className="hidden md:flex lg:hidden">
-                <SearchField compact />
-              </div>
+            <div className="hidden md:flex lg:hidden">
+              <SearchField compact />
+            </div>
 
-              <div className="hidden items-center gap-2 lg:flex">
+            <div className="hidden items-center gap-2 lg:flex">
+              <LangSwitch />
+              <DarkmodeSwitch />
+            </div>
+
+            <div className="relative hidden md:block lg:hidden">
+              <NavButton
+                aria-label="Open settings"
+                onClick={() => setSettingsOpen((value) => !value)}
+                Icon={<Settings2 />}
+              />
+              <div
+                className={`absolute right-0 top-11 z-20 flex items-center gap-2 rounded-lg border border-border bg-surface p-2 shadow-sm transition-all duration-300 ${
+                  isSettingsOpen
+                    ? "visible translate-y-0 opacity-100"
+                    : "invisible -translate-y-1 opacity-0"
+                }`}
+              >
                 <LangSwitch />
                 <DarkmodeSwitch />
               </div>
+            </div>
 
-              <div className="relative hidden md:block lg:hidden">
-                <NavButton
-                  aria-label="Open settings"
-                  onClick={() => setSettingsOpen((value) => !value)}
-                  Icon={<Settings2 />}
-                />
-                <div
-                  className={`absolute right-0 top-11 z-20 flex items-center gap-2 rounded-lg border border-border bg-surface p-2 shadow-sm transition-all duration-300 ${
-                    isSettingsOpen
-                      ? "visible translate-y-0 opacity-100"
-                      : "invisible -translate-y-1 opacity-0"
-                  }`}
-                >
-                  <LangSwitch />
-                  <DarkmodeSwitch />
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2 md:hidden">
-                <SearchField compact />
-                <DarkmodeSwitch />
-              </div>
+            <div className="flex items-center gap-2 md:hidden">
+              <SearchField compact />
+              <LangSwitch />
+              <DarkmodeSwitch />
             </div>
           </div>
         </div>
